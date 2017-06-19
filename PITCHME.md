@@ -6,6 +6,20 @@ YAY-PIs: Working with REST APIs in Python
 
 +++
 
+1.  Preamble: Why it’s important to have fun and practice
+1.  Restfulness
+    1.  Web-scraping
+1.  Making requests
+    1.  curl
+    1.  Python
+1.  Common data handling tasks
+1.  Existing python API frameworks
+1.  Generic wrappers example
+1.  Design and implementation of API wrappers
+1.  Create a REST API for existing services
+
+---
+# TODO
 1.  Preamble: Why it’s important to have fun and practice, even if it’s not a killer app for your org
     1.  Challenge more experienced audience to come up with a cool idea by the end of the talk
 1.  Restfulness
