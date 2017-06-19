@@ -1,6 +1,6 @@
 YAY-PIs: Working with REST APIs in Python
 
----
++++
 
 #  What we're covering:
 1.  Preamble: Why it’s important to have fun and practice, even if it’s not a killer app for your org
