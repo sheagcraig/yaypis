@@ -1,8 +1,8 @@
 ---?image=assets/newwave.jpg
 ---
 ## yAyPIs
-### ( YAY + APIs )
-###Working with REST APIs in Python
+### ( <span style='color: #3DE9FE'>Y</span><span style='color: #FA00C0'>A</span><span style='color: #3DE9FE'>Y</span> + APIs )
+### Working with REST APIs in Python
 
 ---
 
@@ -32,10 +32,20 @@ any ideas for things to do to help you at your job (yet).
 
 ## Code is <span style='color: #DC822A'>*art*</span>
 
+Play with these:
 - https://github.com/python-pillow/Pillow <!-- .element: class="fragment" -->
 - http://opencv.org <!-- .element: class="fragment" -->
+
++++
+
+## Code is <span style='color: #DC822A'>*art*</span>
+
+Send them here:
 - http://turbulence.org <!-- .element: class="fragment" -->
-- http://rhizome.org <!-- .element: class="fragment" -->
+- https://anthology.rhizome.org <!-- .element: class="fragment" -->
+- https://creators.vice.com/en_us/topic/new-media-art <!-- .element: class="fragment" -->
+- http://www.isea-web.org <!-- .element: class="fragment" -->
+- https://www.aec.at/about/en/ <!-- .element: class="fragment" -->
 
 Note:
 What about doing something completely locally and then just automating an update to Twitter or Instagram?
