@@ -1,4 +1,4 @@
----?image=newwave.jpg
+---?image=assets/newwave.jpg
 ---
 ## yAyPIs
 ### ( YAY + APIs )
