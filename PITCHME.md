@@ -1,4 +1,4 @@
----?image=assets/newwave.jpg
+---?image=newwave.jpg
 ---
 ## yAyPIs
 ### ( YAY + APIs )
@@ -46,16 +46,16 @@ What about doing something completely locally and then just automating an update
 Note:
 More experienced audience come up with a cool idea by the end of the talk
 
----?include=md/restfulness.md
+---?include=restfulness.md
 
----?include=md/requests.md
+---?include=requests.md
 
----?include=md/responses.md
+---?include=responses.md
 
----?include=md/example_frameworks.md
+---?include=example_frameworks.md
 
----?include=md/generic_wrappers.md
+---?include=generic_wrappers.md
 
----?include=md/api_creation.md
+---?include=api_creation.md
 
----?include=md/api_wrapping.md
+---?include=api_wrapping.md
