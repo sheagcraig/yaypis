@@ -42,17 +42,16 @@ What about doing something completely locally and then just automating an update
 Note:
 More experienced audience come up with a cool idea by the end of the talk
 
----
 ---?include=md/restfulness.md
----
+
 ---?include=md/requests.md
----
+
 ---?include=md/responses.md
----
+
 ---?include=md/example_frameworks.md
----
+
 ---?include=md/generic_wrappers.md
----
+
 ---?include=md/api_creation.md
----
+
 ---?include=md/api_wrapping.md
