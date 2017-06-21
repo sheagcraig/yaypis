@@ -30,7 +30,7 @@ any ideas for things to do to help you at your job (yet).
 
 +++
 
-## Code is <span style='color: #DC822A'>*art*</span>
+## Code is <span style='color: #3DE9FE'>*art*</span>
 
 Play with these:
 - https://github.com/python-pillow/Pillow <!-- .element: class="fragment" -->
@@ -38,7 +38,7 @@ Play with these:
 
 +++
 
-## Code is <span style='color: #DC822A'>*art*</span>
+## Code is <span style='color: #3DE9FE'>*art*</span>
 
 Send them here:
 - http://turbulence.org <!-- .element: class="fragment" -->
@@ -55,6 +55,8 @@ What about doing something completely locally and then just automating an update
 
 Note:
 More experienced audience come up with a cool idea by the end of the talk
+
+---?include=api.md
 
 ---?include=restfulness.md
 
