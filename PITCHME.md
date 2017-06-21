@@ -1,3 +1,4 @@
+---?image=img/newwave.jpg
 ## YAY-PIs: Working with REST APIs in Python
 
 ---
