@@ -1,5 +1,8 @@
----?image=img/newwave.jpg
-## YAY-PIs: Working with REST APIs in Python
+---?image=assets/newwave.jpg
+---
+## yAyPIs
+### ( YAY + APIs )
+###Working with REST APIs in Python
 
 ---
 
