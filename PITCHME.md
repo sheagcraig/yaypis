@@ -6,17 +6,22 @@ YAY-PIs: Working with REST APIs in Python
 
 +++
 
-1.  Preamble: Why it’s important to have fun
-1.  Restfulness
-1.  Making requests
-1.  Handling responses
-1.  Python API frameworks for services
-1.  Generic API wrappers
-1.  Create a REST API for existing services
-1.  Design and implementation of API wrappers
+- Preamble: Why it’s important to have fun <!-- .element: class="fragment" -->
+- Restfulness                              <!-- .element: class="fragment" -->
+- Making requests <!-- .element: class="fragment" -->
+- Handling responses<!-- .element: class="fragment" -->
+- Python API frameworks for services<!-- .element: class="fragment" -->
+- Generic API wrappers <!-- .element: class="fragment" -->
+- Create a REST API for existing services <!-- .element: class="fragment" -->
+- Design and implementation of API wrappers <!-- .element: class="fragment" -->
 
 ---
-# Preamble: Why it’s important to have fun and practice, even if it’s not a killer app for your org
+# Preamble: Why it’s important to have fun!
+
+Note:
+Chances are extremely good that you'll be completely bogged down by design decisions and worry about
+"doing it right" if you start with something critical for your organization. Or maybe you don't have
+any ideas for things to do to help you at your job (yet).
 
 +++
 # Challenge more experienced audience to come up with a cool idea by the end of the talk
@@ -55,8 +60,7 @@ YAY-PIs: Working with REST APIs in Python
 +++
 # Getting curl args from Chrome dev panel
 +++
-# Python
-+++
+# Python +++
 # urllib from the interpreter
 +++
 # requests
