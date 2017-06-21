@@ -1,4 +1,4 @@
-YAY-PIs: Working with REST APIs in Python
+## YAY-PIs: Working with REST APIs in Python
 
 ---
 
@@ -16,7 +16,8 @@ YAY-PIs: Working with REST APIs in Python
 - Design and implementation of API wrappers <!-- .element: class="fragment" -->
 
 ---
-# Preamble: Why it’s important to have fun!
+# Preamble
+## Why it’s important to have fun!
 
 Note:
 Chances are extremely good that you'll be completely bogged down by design decisions and worry about
@@ -24,27 +25,36 @@ Chances are extremely good that you'll be completely bogged down by design decis
 any ideas for things to do to help you at your job (yet).
 
 +++
-# Challenge more experienced audience to come up with a cool idea by the end of the talk
+
+## Code is <span style='color: #DC822A'>*art*</span>
+
+- https://github.com/python-pillow/Pillow <!-- .element: class="fragment" -->
+- http://opencv.org <!-- .element: class="fragment" -->
+- http://turbulence.org <!-- .element: class="fragment" -->
+- http://rhizome.org <!-- .element: class="fragment" -->
+
+Note:
+What about doing something completely locally and then just automating an update to Twitter or Instagram?
+
++++
+# Challenge 
+
+Note:
+More experienced audience come up with a cool idea by the end of the talk
 
 ---
-# Restfulness
-
-+++
-# REST definition (Expose data or services over an HTTP connection)
-+++
-# CRUD
-+++
-# Requests
-+++
-# Responses
-+++
-# Status codes
-+++
+---?include=md/restfulness.md
+---
 # HTML
 +++
 # XML
+Note:
+pretty printing methods with raw python and lxml
+tree-printing/exploration
 +++
 # JSON
+Note:
+pretty printing, tree-printing/exploration
 +++
 # Web-scraping
 +++
