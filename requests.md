@@ -1,6 +1,8 @@
 # Making requests (Sal as an example service)
 +++
 # curl
+Note:
+Todo- what do you do about SSL?
 +++
 # httpie
 +++
