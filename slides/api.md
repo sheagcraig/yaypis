@@ -91,26 +91,31 @@ int     0x80        ; Interrupt to perform syscall
 
 ---
 
-# CRUD
 What do we need from our API? What do we want to *do*?
 
-Note:
-The major functions needed for manipulating data in persistent storage (i.e. a database/webapp)
 +++
+# CRUD
 -  <span style='color: #3DE9FE'>C</span>reate
 -  <span style='color: #3DE9FE'>R</span>ead
 -  <span style='color: #3DE9FE'>U</span>pdate
 -  <span style='color: #3DE9FE'>D</span>elete
 
+Note:
+The major functions needed for manipulating data in persistent storage (i.e. a database/webapp)
+
 +++
+# BREAD
 -  <span style='color: #3DE9FE'>B</span>rowse
 -  <span style='color: #3DE9FE'>R</span>ead
 -  <span style='color: #3DE9FE'>E</span>dit
 -  <span style='color: #3DE9FE'>A</span>dd
 -  <span style='color: #3DE9FE'>D</span>elete
 
-+++
++++?image=assets/tshirt.jpg&size=60%
+# CRAP
 -  <span style='color: #3DE9FE'>C</span>reate
 -  <span style='color: #3DE9FE'>R</span>etrieve
 -  <span style='color: #3DE9FE'>A</span>lter
 -  <span style='color: #3DE9FE'>P</span>urge
+
+![nice shirt]()
