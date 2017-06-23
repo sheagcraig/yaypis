@@ -111,11 +111,10 @@ The major functions needed for manipulating data in persistent storage (i.e. a d
 -  <span style='color: #3DE9FE'>A</span>dd
 -  <span style='color: #3DE9FE'>D</span>elete
 
-+++?image=assets/tshirt.jpg&size=60%
++++
 # CRAP
 -  <span style='color: #3DE9FE'>C</span>reate
 -  <span style='color: #3DE9FE'>R</span>etrieve
 -  <span style='color: #3DE9FE'>A</span>lter
 -  <span style='color: #3DE9FE'>P</span>urge
-
-![nice shirt]()
+<img src="=assets/tshirt.jpg" alt='Nice shirt' style='width: 200px;' />
