@@ -93,9 +93,25 @@ int     0x80        ; Interrupt to perform syscall
 
 # CRUD
 Note:
-TODO The major functions needed for manipulating data in persistent storage (i.e. a database)
-TODO Other acronyms are BREAD (Browse, read, edit, add delete) CRAP (Create, retrieve, alter, purge)
-TODO Most of what we're interested in is data from a database, potentially as manipulated by a web app.
+The major functions needed for manipulating data in persistent storage (i.e. a database/webapp)
++++
+-  <span style='color: #3DE9FE'>C</span>reate
+-  <span style='color: #3DE9FE'>R</span>ead
+-  <span style='color: #3DE9FE'>U</span>pdate
+-  <span style='color: #3DE9FE'>D</span>elete
+
++++
+-  <span style='color: #3DE9FE'>B</span>rowse
+-  <span style='color: #3DE9FE'>R</span>ead
+-  <span style='color: #3DE9FE'>E</span>dit
+-  <span style='color: #3DE9FE'>A</span>dd
+-  <span style='color: #3DE9FE'>D</span>elete
+
++++
+-  <span style='color: #3DE9FE'>C</span>reate
+-  <span style='color: #3DE9FE'>R</span>etrieve
+-  <span style='color: #3DE9FE'>A</span>lter
+-  <span style='color: #3DE9FE'>P</span>urge
 +++
 # Requests
 Note:
