@@ -33,8 +33,12 @@ any ideas for things to do to help you at your job (yet).
 ## Code is <span style='color: #3DE9FE'>*art*</span>
 
 Play with these:
-- https://github.com/python-pillow/Pillow <!-- .element: class="fragment" -->
-- http://opencv.org <!-- .element: class="fragment" -->
+- Image processing: https://github.com/python-pillow/Pillow <!-- .element: class="fragment" -->
+- More image processing: http://scikit-image.org/ <!-- .element: class="fragment" -->
+- Computer Vision! Machine learning and other magic: http://opencv.org <!-- .element: class="fragment" -->
+- Interactive data visualization hotness: https://github.com/bokeh/bokeh <!-- .element: class="fragment" -->
+- Shred the English language: http://www.nltk.org <!-- .element: class="fragment" -->
+![Michaleangelo](assets/mab.jpg)
 
 +++
 
@@ -52,6 +56,9 @@ What about doing something completely locally and then just automating an update
 
 +++
 # Challenge 
+
+Come up with a clever toy-project using web services
+Example: 
 
 Note:
 More experienced audience come up with a cool idea by the end of the talk
