@@ -30,6 +30,7 @@ any ideas for things to do to help you at your job (yet).
 
 +++?image=assets/mab.jpg&size=cover
 
+<div style='background-color: #222222BB'>
 ## Code is <span style='color: #3DE9FE'>*art*</span>
 
 Play with these:
@@ -38,6 +39,7 @@ Play with these:
 - Computer Vision! Machine learning and other magic: http://opencv.org
 - Interactive data visualization hotness: https://github.com/bokeh/bokeh
 - Shred the English language: http://www.nltk.org 
+</div>
 
 +++
 
