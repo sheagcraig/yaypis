@@ -28,28 +28,27 @@ Chances are extremely good that you'll be completely bogged down by design decis
 "doing it right" if you start with something critical for your organization. Or maybe you don't have
 any ideas for things to do to help you at your job (yet).
 
-+++
++++?image=assets/mab.jpg
 
 ## Code is <span style='color: #3DE9FE'>*art*</span>
 
 Play with these:
-- Image processing: https://github.com/python-pillow/Pillow <!-- .element: class="fragment" -->
-- More image processing: http://scikit-image.org/ <!-- .element: class="fragment" -->
-- Computer Vision! Machine learning and other magic: http://opencv.org <!-- .element: class="fragment" -->
-- Interactive data visualization hotness: https://github.com/bokeh/bokeh <!-- .element: class="fragment" -->
-- Shred the English language: http://www.nltk.org <!-- .element: class="fragment" -->
-![Michaleangelo](assets/mab.jpg)
+- Image processing: https://github.com/python-pillow/Pillow 
+- More image processing: http://scikit-image.org/
+- Computer Vision! Machine learning and other magic: http://opencv.org
+- Interactive data visualization hotness: https://github.com/bokeh/bokeh
+- Shred the English language: http://www.nltk.org 
 
 +++
 
 ## Code is <span style='color: #3DE9FE'>*art*</span>
 
 Send them here:
-- http://turbulence.org <!-- .element: class="fragment" -->
-- https://anthology.rhizome.org <!-- .element: class="fragment" -->
-- https://creators.vice.com/en_us/topic/new-media-art <!-- .element: class="fragment" -->
-- http://www.isea-web.org <!-- .element: class="fragment" -->
-- https://www.aec.at/about/en/ <!-- .element: class="fragment" -->
+- http://turbulence.org 
+- https://anthology.rhizome.org 
+- https://creators.vice.com/en_us/topic/new-media-art 
+- http://www.isea-web.org 
+- https://www.aec.at/about/en/
 
 Note:
 What about doing something completely locally and then just automating an update to Twitter or Instagram?
