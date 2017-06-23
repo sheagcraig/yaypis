@@ -55,9 +55,9 @@ Meanwhile, behind the scenes...
 @[282-300]
 @[294-295]
 @[42-49]
-+++?image=assets/list_one_item.png
-+++?image=assets/list_4.png
-+++?image=assets/list_insert.png
++++?image=assets/list_one_item.png&size=contain
++++?image=assets/list_4.png&size=contain
++++?image=assets/list_insert.png&size=contain
 Note:
 TODO Add in listobject.c's append method
 TODO Do annotated code presenting to say what it's actually doing.
