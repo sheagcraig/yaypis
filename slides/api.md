@@ -48,10 +48,16 @@ Appending an item to a list:
 ```
 +++
 Meanwhile, behind the scenes...
+
+> http://www.laurentluce.com/posts/python-list-implementation/
 +++?code=slides/listobject.c
 @[302-309]
 @[282-300]
-+++
+@[294-295]
+@[42-49]
++++?image=assets/list_one_item.png
++++?image=assets/list_4.png
++++?image=assets/list_insert.png
 Note:
 TODO Add in listobject.c's append method
 TODO Do annotated code presenting to say what it's actually doing.
