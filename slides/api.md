@@ -14,6 +14,7 @@ The `list` API in python
 @[106-107]
 @[90-91]
 +++
+## List methods
 ```
 append insert
 clear  pop
@@ -24,6 +25,7 @@ index
 ```
 
 +++
+## List *magic* methods
 ```
 __add__       __ge__           __iter__      __repr__
 __class__     __getattribute__ __le__        __reversed__
@@ -45,10 +47,15 @@ Appending an item to a list:
 ['Big Trouble in Little China']
 ```
 +++
-Meanwhile, behind the scenes:
+Meanwhile, behind the scenes...
++++?code=slides/listobject.c
+@[302-309]
+@[282-300]
++++
 Note:
 TODO Add in listobject.c's append method
 TODO Do annotated code presenting to say what it's actually doing.
+And for print! (show Linux print via assembler!
 +++
 
 # CRUD
