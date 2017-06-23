@@ -8,6 +8,14 @@
 For example:
 The `list` API in python
 
+Appending an item to a list:
+```python
+>>> best_movies_ever = []
+>>> best_movies_ever.append('Big Trouble in Little China')
+>>> print(best_movies_ever)
+['Big Trouble in Little China']
+```
+
 +++?code=list_help.py
 @[3-5]
 @[96-97]
@@ -39,13 +47,14 @@ __format__   __init_subclass__ __reduce_ex__
 ```
 
 +++
-Appending an item to a list:
-```shell
+```python
 >>> best_movies_ever = []
 >>> best_movies_ever.append('Big Trouble in Little China')
 >>> print(best_movies_ever)
 ['Big Trouble in Little China']
 ```
+@[2]
+
 +++
 Meanwhile, behind the scenes...
 
@@ -63,6 +72,25 @@ TODO Add in listobject.c's append method
 TODO Do annotated code presenting to say what it's actually doing.
 And for print! (show Linux print via assembler!
 +++
+```python
+>>> best_movies_ever = []
+>>> best_movies_ever.append('Big Trouble in Little China')
+>>> print(best_movies_ever)
+['Big Trouble in Little China']
+```
+@[3-4]
++++
+```asm
+push    dword len   ; Length of message
+push    dword msg   ; Message to write
+push    dword 1     ; STDOUT
+mov     eax,4       ; Command code for 'writing'
+sub     esp,4       ; <<< BSD requires an additional 4 bytes of stack
+int     0x80        ; SYSCALL
+add     esp,16      ; Functionally 'pop' everything off the stack
+```
+
+---
 
 # CRUD
 Note:
