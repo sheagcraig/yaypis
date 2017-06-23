@@ -1,3 +1,3 @@
 ## What do we want?
 +++?image=assets/data.jpg&size=cover
-# ALL THE DATAS!
+# <span style='color: #3DE9FE'>ALL THE DATAS!</span>
