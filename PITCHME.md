@@ -65,6 +65,8 @@ More experienced audience come up with a cool idea by the end of the talk
 
 ---
 # Example
++++?code=examples/giphy/giphy_basic.py
+
 Note:
 TODO just demonstrate something cool with a single request; like querying twitters?
 
