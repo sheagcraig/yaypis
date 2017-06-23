@@ -80,7 +80,7 @@ And for print! (show Linux print via assembler!
 ```
 @[3-4]
 +++
-```asm
+```x86asm
 push    dword len   ; Length of message
 push    dword msg   ; Message to write
 push    dword 1     ; STDOUT
