@@ -56,9 +56,9 @@ What about doing something completely locally and then just automating an update
 +++
 # Challenge 
 
-Come up with a clever toy-project using web services
+Come up with a clever toy-project using web services.
 Example: 
-Grab all of the taco tweets, tokenize the text, and tag to get the adjectives, then visualize how people are *describing* tacos.
+<span style='color: #3DE9FE'>*Grab* all of the taco tweets, *tokenize* the text, and *tag* to get the adjectives, then *visualize* how people are *describing* tacos.</span>
 
 Note:
 More experienced audience come up with a cool idea by the end of the talk
