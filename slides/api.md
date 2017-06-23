@@ -14,14 +14,17 @@ The `list` API in python
 @[106-107]
 @[90-91]
 +++
+```
 append insert
 clear  pop
 copy   remove
 count  reverse
 extend sort
 index
+```
 
 +++
+```
 __add__       __ge__           __iter__      __repr__
 __class__     __getattribute__ __le__        __reversed__
 __contains__  __getitem__      __len__       __rmul__
@@ -31,6 +34,7 @@ __dir__       __iadd__         __ne__        __sizeof__
 __doc__       __imul__         __new__       __str__
 __eq__        __init__         __reduce__    __subclasshook__
 __format__   __init_subclass__ __reduce_ex__
+```
 
 +++
 Appending an item to a list:
