@@ -61,18 +61,18 @@ More experienced audience come up with a cool idea by the end of the talk
 Note:
 TODO just demonstrate something cool with a single request; like querying twitters?
 
----?include=api.md
+---?include=slides/api.md
 
----?include=restfulness.md
+---?include=slides/restfulness.md
 
----?include=requests.md
+---?include=slides/requests.md
 
----?include=responses.md
+---?include=slides/responses.md
 
----?include=example_frameworks.md
+---?include=slides/example_frameworks.md
 
----?include=generic_wrappers.md
+---?include=slides/generic_wrappers.md
 
----?include=api_creation.md
+---?include=slides/api_creation.md
 
----?include=api_wrapping.md
+---?include=slides/api_wrapping.md
