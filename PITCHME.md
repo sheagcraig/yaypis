@@ -28,7 +28,7 @@ Chances are extremely good that you'll be completely bogged down by design decis
 "doing it right" if you start with something critical for your organization. Or maybe you don't have
 any ideas for things to do to help you at your job (yet).
 
-+++?image=assets/mab.jpg
++++?image=assets/mab.jpg&size=cover
 
 ## Code is <span style='color: #3DE9FE'>*art*</span>
 
