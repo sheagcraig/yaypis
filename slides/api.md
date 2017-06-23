@@ -15,7 +15,7 @@ The `list` API in python
 @[90-91]
 +++
 ## List methods
-```
+```shell
 append insert
 clear  pop
 copy   remove
@@ -26,7 +26,7 @@ index
 
 +++
 ## List *magic* methods
-```
+```shell
 __add__       __ge__           __iter__      __repr__
 __class__     __getattribute__ __le__        __reversed__
 __contains__  __getitem__      __len__       __rmul__
@@ -40,7 +40,7 @@ __format__   __init_subclass__ __reduce_ex__
 
 +++
 Appending an item to a list:
-```
+```shell
 >>> best_movies_ever = []
 >>> best_movies_ever.append('Big Trouble in Little China')
 >>> print(best_movies_ever)
