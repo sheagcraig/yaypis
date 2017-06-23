@@ -117,4 +117,5 @@ The major functions needed for manipulating data in persistent storage (i.e. a d
 -  <span style='color: #3DE9FE'>R</span>etrieve
 -  <span style='color: #3DE9FE'>A</span>lter
 -  <span style='color: #3DE9FE'>P</span>urge
-<img src="=assets/tshirt.jpg" alt='Nice shirt' style='width: 200px;' />
+<br/>
+<img src="assets/tshirt.jpg" alt='Nice shirt' style='width: 200px;' />
