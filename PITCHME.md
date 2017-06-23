@@ -67,6 +67,7 @@ More experienced audience come up with a cool idea by the end of the talk
 # Example
 +++?code=examples/giphy/giphy_basic.py
 @[1]
+@[7-8]
 @[16-17]
 @[18]
 +++?code=examples/giphy/results.json
