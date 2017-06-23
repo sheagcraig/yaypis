@@ -66,6 +66,18 @@ More experienced audience come up with a cool idea by the end of the talk
 ---
 # Example
 +++?code=examples/giphy/giphy_basic.py
+@[1]
+@[16-17]
+@[18]
++++?code=examples/giphy/results.json
+@[2]
+@[20]
+@[121-131]
++++?code=examples/giphy/giphy_basic.py
+@[19-21]
+
++++
+![Tacos!](examples/giphy/taco.gif)
 
 Note:
 TODO just demonstrate something cool with a single request; like querying twitters?
