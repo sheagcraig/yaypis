@@ -81,13 +81,12 @@ And for print! (show Linux print via assembler!
 @[3-4]
 +++
 ```x86asm
-push    dword len   ; Length of message
-push    dword msg   ; Message to write
-push    dword 1     ; STDOUT
-mov     eax,4       ; Command code for 'writing'
-sub     esp,4       ; <<< BSD requires an additional 4 bytes of stack
-int     0x80        ; SYSCALL
-add     esp,16      ; Functionally 'pop' everything off the stack
+push    dword len   ; Length of message (31)
+push    dword msg   ; Address to beginning of string
+push    dword 1     ; Output to STDOUT
+mov     eax,4       ; System code for 'writing'
+sub     esp,4       ; BSD needs an extra 4 bytes of stack
+int     0x80        ; Interrupt to perform syscall
 ```
 
 ---
