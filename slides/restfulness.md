@@ -13,12 +13,12 @@ Note:
 - The REST API abstracts the storage of resources from the interface for getting at them.
 - The data exchanged is representational, meaning it may be in multiple formats that do not
   resemble the native storage (e.g. XML or JSON vs. a SQL table row).
-+++?code=examples/giphy/results.json
-Note: 
-- The data exchanged is representational, meaning it may be in multiple formats that do not
-  resemble the native storage (e.g. XML or JSON vs. a SQL table row).
-+++?code=examples/giphy/results2.json
-+++?code=examples/giphy/results3.json
++++
+## Example: http://api.giphy.com/v1/gifs/<span style='color: #3DE9FE'>qRryuPIunLS1O</span>
+(Get a GIF by its ID)
+@[2-4]
+@[19-32]
+
 +++
 # <span style='color: #3DE9FE'>S</span>tate
 +++
