@@ -14,8 +14,11 @@ Note:
 - The data exchanged is representational, meaning it may be in multiple formats that do not
   resemble the native storage (e.g. XML or JSON vs. a SQL table row).
 +++?code=examples/giphy/results.json
+Note: 
 - The data exchanged is representational, meaning it may be in multiple formats that do not
   resemble the native storage (e.g. XML or JSON vs. a SQL table row).
++++?code=examples/giphy/results2.json
++++?code=examples/giphy/results3.json
 +++
 # <span style='color: #3DE9FE'>S</span>tate
 +++
