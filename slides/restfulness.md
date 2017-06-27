@@ -62,7 +62,7 @@ Example: Which is "correct"?
 - These resources are *represented*, for our examples at least, as JSON or XML.
 - We can also create and update resources using the representations provided.
 
-+++?image=assets/request_flowchart.jpg
++++?image=assets/request_flowchart.jpg&size=contain
 +++
 ## Example
 
