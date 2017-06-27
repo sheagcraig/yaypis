@@ -55,15 +55,16 @@ Example: Which is "correct"?
 - http://myserver.com/catalog?item=1729
 
 ---
-## What does it mean *pragmatically* to be *RESTful*?
+## What does it mean *practically* to be *RESTful*?
 
 - Resources are accessed through HTTP requests to a collection of URLs.
 	- http://instagrambookfacetweets.com/api/cat_videos/
 - These resources are *represented*, for our examples at least, as JSON or XML.
 - We can also create and update resources using the representations provided.
 
++++?image=assets/request_flowchart.jpg
 +++
-## Concretely
+## Example
 
 - We make a HTTP GET request to the computers endpoint to get a list of all computers.
 - We parse the resulting XML
@@ -101,6 +102,7 @@ The major functions needed for manipulating data in persistent storage (i.e. a d
 <img src="assets/tshirt.jpg" alt='Nice shirt' style='width: 200px;' />
 
 +++
+
 # Requests
 Note:
 Talk about HTTP methods
