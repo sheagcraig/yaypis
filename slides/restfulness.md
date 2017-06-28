@@ -59,8 +59,8 @@ Example: Which is "correct"?
 
 - Resources are mapped to a collection of URLs |
 	- Resources are uniquely identified. |
-	- Collection: http://instagrambookfacetweets.com/api/cat_videos/ |
-	- Individual: http://instagrambookfacetweets.com/api/cat_videos/45244029342342 |
+	- Collection http://instagrambookfacetweets.com/api/cat_videos/ |
+	- Individual http://instagrambookfacetweets.com/api/cat_videos/45244029342342 |
 
 +++
 ## What does it mean *practically* to be *RESTful*?
