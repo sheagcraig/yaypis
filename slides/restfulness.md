@@ -57,7 +57,7 @@ Example: Which is "correct"?
 ---
 ## What does it mean *practically* to be *RESTful*?
 
-- Resources are mapped to a collection of URLs <!-- .element: class="fragment" -->
+- Resources are mapped to a collection of URLs |
 	- Resources are uniquely identified. <!-- .element: class="fragment" -->
 	- Collection: http://instagrambookfacetweets.com/api/cat_videos/ <!-- .element: class="fragment" -->
 	- Individual: http://instagrambookfacetweets.com/api/cat_videos/45244029342342 <!-- .element: class="fragment" -->
