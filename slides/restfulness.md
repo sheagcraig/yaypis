@@ -1,4 +1,4 @@
-# _REST_fulness
+# **REST**fulness
 ## What does it mean to be *RESTful*?
 +++
 # <span style='color: #3DE9FE'>RE</span>presentational
