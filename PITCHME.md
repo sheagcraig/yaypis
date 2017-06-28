@@ -1,7 +1,7 @@
 ---?image=assets/newwave.jpg
 ---
 ## yAyPIs
-### ( <span style='color: #3DE9FE'>Y</span><span style='color: #FA00C0'>A</span><span style='color: #3DE9FE'>Y</span> + APIs )
+### ( **Y***A***Y** + APIs )
 ### Working with REST APIs in Python
 
 ---
@@ -30,7 +30,7 @@ any ideas for things to do to help you at your job (yet).
 
 +++?image=assets/mab.jpg&size=cover
 
-## Code is <span style='color: #3DE9FE'>*art*</span>
+## Code is **art**
 
 Play with these:
 - Image processing: https://github.com/python-pillow/Pillow 
@@ -41,7 +41,7 @@ Play with these:
 
 +++
 
-## Code is <span style='color: #3DE9FE'>*art*</span>
+## Code is **art**
 
 Send them here:
 - http://turbulence.org 

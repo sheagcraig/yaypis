@@ -1,11 +1,11 @@
 # **REST**fulness
-## What does it mean to be *RESTful*?
+## What does it mean to be **RESTful**?
 +++
-# <span style='color: #3DE9FE'>RE</span>presentational
-# <span style='color: #3DE9FE'>S</span>tate
-# <span style='color: #3DE9FE'>T</span>ransfer
+# **RE**presentational
+# **S**tate
+# **T**ransfer
 +++
-# <span style='color: #3DE9FE'>RE</span>presentational
+# **RE**presentational
 REST is about exposing *resources*.
 
 Note:
@@ -14,7 +14,7 @@ Note:
 - The data exchanged is representational, meaning it may be in multiple formats that do not
   resemble the native storage (e.g. XML or JSON vs. a SQL table row).
 +++
-## Example: http://api.giphy.com/v1/gifs/<span style='color: #FA00C0'>qRryuPIunLS1O</span>
+## Example: http://api.giphy.com/v1/gifs/*qRryuPIunLS1O*
 (Get a GIF by its ID)
 
 Note:
@@ -28,8 +28,8 @@ Note:
 This JSON is a *representation* of the gif resource stored with Giphy.
 
 +++
-# <span style='color: #3DE9FE'>S</span>tate
-# <span style='color: #3DE9FE'>T</span>ransfer
+# **S**tate
+# **T**ransfer
 
 Note:
 
@@ -76,41 +76,41 @@ Example: Which is "correct"?
 What do we need from our API? What do we want to *do*?
 +++
 # CRUD
--  <span style='color: #3DE9FE'>C</span>reate
--  <span style='color: #3DE9FE'>R</span>ead
--  <span style='color: #3DE9FE'>U</span>pdate
--  <span style='color: #3DE9FE'>D</span>elete
+-  **C**reate
+-  **R**ead
+-  **U**pdate
+-  **D**elete
 
 Note:
 The major functions needed for manipulating data in persistent storage (i.e. a database/webapp)
 
 +++
 # BREAD
--  <span style='color: #3DE9FE'>B</span>rowse
--  <span style='color: #3DE9FE'>R</span>ead
--  <span style='color: #3DE9FE'>E</span>dit
--  <span style='color: #3DE9FE'>A</span>dd
--  <span style='color: #3DE9FE'>D</span>elete
+-  **B**rowse
+-  **R**ead
+-  **E**dit
+-  **A**dd
+-  **D**elete
 
 +++
 # CRAP
--  <span style='color: #3DE9FE'>C</span>reate
--  <span style='color: #3DE9FE'>R</span>etrieve
--  <span style='color: #3DE9FE'>A</span>lter
--  <span style='color: #3DE9FE'>P</span>urge
+-  **C**reate
+-  **R**etrieve
+-  **A**lter
+-  **P**urge
 <br/>
 <img src="assets/tshirt.jpg" alt='Nice shirt' style='width: 200px;' />
 
 +++
 These actions map to an HTTP Method:
-- <span style='color: #3DE9FE'>CREATE</span> = POST
-- <span style='color: #3DE9FE'>READ</span> = GET
-- <span style='color: #3DE9FE'>UPDATE</span> = PUT
-- <span style='color: #3DE9FE'>DELETE</span> = DELETE
+- **CREATE** = POST
+- **READ** = GET
+- **UPDATE** = PUT
+- **DELETE** = DELETE
 
 ---
 # Requests
-- Specify the <span style='color: #3DE9FE'>method</span> (GET, POST, etc)
+- Specify the **method** (GET, POST, etc)
 - URL
 - url-encoded query string parameters ( `?meat=pork` )
 - Headers include data about the request
