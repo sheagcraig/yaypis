@@ -1,7 +1,7 @@
 ---?image=assets/newwave.jpg
 ---
 ## yAyPIs
-### ( **Y***A***Y** + APIs )
+### ( **Y**<em>A<em>**Y** + APIs )
 ### Working with REST APIs in Python
 
 ---
