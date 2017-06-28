@@ -57,10 +57,10 @@ Example: Which is "correct"?
 ---
 ## What does it mean *practically* to be *RESTful*?
 
-- Resources are mapped to a collection of URLs |
-	- Resources are uniquely identified. |
-	- Collection http://instagrambookfacetweets.com/api/cat_videos/ |
-	- Individual http://instagrambookfacetweets.com/api/cat_videos/45244029342342 |
+- Resources are mapped to a collection of URLs 
+	- Resources are uniquely identified. 
+	- Collection http://instagrambookfacetweets.com/api/cat_videos/ 
+	- Individual http://instagrambookfacetweets.com/api/cat_videos/45244029342342 
 
 +++
 ## What does it mean *practically* to be *RESTful*?
