@@ -5,7 +5,10 @@
 +++
 # curl
 ```shell
-$ curl -H "privatekey:PRIVATEKEY" -H "publickey:PUBLICKEY" http://sal.awesome.com/api/machines/C0DEADBEEF01
+$ curl \
+	-H "privatekey:PRIVATEKEY" \
+	-H "publickey:PUBLICKEY" \
+	http://sal.awesome.com/api/machines/C0DEADBEEF01
 ```
 +++
 ## wha...?
@@ -24,12 +27,16 @@ $ curl -H "privatekey:PRIVATEKEY" -H "publickey:PUBLICKEY" http://sal.awesome.co
 Note:
 Didn't discuss status code 301, it means you got redirected, in this case by a proxy.
 +++?image=assets/etcake.jpg&size=contain
-# 301 Redirected
+# *301 Redirected*
 +++
 # curl
 ## Follow redirects with `--location`
 ```shell
-$ curl --location -H "privatekey:PRIVATEKEY" -H "publickey:PUBLICKEY" http://sal.awesome.com/api/machines/C0DEADBEEF01
+$ curl \
+	--location \
+	-H "privatekey:PRIVATEKEY" \
+	-H "publickey:PUBLICKEY" \
+	http://sal.awesome.com/api/machines/C0DEADBEEF01
 ```
 
 +++
@@ -40,7 +47,11 @@ $ curl --location -H "privatekey:PRIVATEKEY" -H "publickey:PUBLICKEY" http://sal
 +++
 ## Pretty print by piping to Python
 ```shell
-$ curl --location -H "privatekey:PRIVATEKEY" -H "publickey:PUBLICKEY" http://sal.awesome.com/api/machines/C0DEADBEEF01 | python3 -m json.tool
+$ curl \
+	--location \
+	-H "privatekey:PRIVATEKEY" \
+	-H "publickey:PUBLICKEY" http://sal.awesome.com/api/machines/C0DEADBEEF01 \
+	| python3 -m json.tool
 ```
 +++
 ```
@@ -75,6 +86,7 @@ $ curl --location -H "privatekey:PRIVATEKEY" -H "publickey:PUBLICKEY" http://sal
 }
 ```
 
++++
 # httpie
 +++
 # Getting curl args from Chrome dev panel
