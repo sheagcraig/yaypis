@@ -14,7 +14,7 @@ Note:
 - The data exchanged is representational, meaning it may be in multiple formats that do not
   resemble the native storage (e.g. XML or JSON vs. a SQL table row).
 +++
-## Example: http://api.giphy.com/v1/gifs/*qRryuPIunLS1O*
+## Example: http://api.giphy.com/v1/gifs/<em>qRryuPIunLS1O</em>
 (Get a GIF by its ID)
 
 Note:
@@ -57,19 +57,21 @@ Example: Which is "correct"?
 ---
 ## What does it mean *practically* to be *RESTful*?
 
-- Resources are accessed through HTTP requests to a collection of URLs.
-	- http://instagrambookfacetweets.com/api/cat_videos/
+- Resources are accessed through HTTP requests to a collection of URLs that uniquely identify service objects.
+	- Collection: http://instagrambookfacetweets.com/api/cat_videos/
+	- Individual: http://instagrambookfacetweets.com/api/cat_videos/45244029342342
 - These resources are *represented*, for our examples at least, as JSON or XML.
-- We can also create and update resources using the representations provided.
+- We specify the action we wish to perform using HTTP methods (GET, POST, PUT, DELETE).
+- The status code of the response represents type of success or failure.
 
 +++?image=assets/request_flowchart.jpg&size=contain
 +++
 ## Example
 
-- We make a HTTP GET request to the computers endpoint to get a list of all computers.
-- We parse the resulting XML
-- We find a computer we're interested in manipulating, and change something (asset tag?)
-- We PUT that record back to that computer's unique URL, and the server responds wether it worked or not.
+- We make a **HTTP GET request** to the computers endpoint to get a list of all computers.
+- We *parse* the resulting XML
+- We **find** a computer we're interested in manipulating, and *change* something (asset tag?)
+- We **PUT** that record back to that computer's unique URL, and the server *responds* wether it worked or not.
 - Etc.
 
 ---
@@ -103,24 +105,36 @@ The major functions needed for manipulating data in persistent storage (i.e. a d
 
 +++
 These actions map to an HTTP Method:
-- **CREATE** = POST
-- **READ** = GET
-- **UPDATE** = PUT
-- **DELETE** = DELETE
+- **CREATE** = *POST*
+- **READ** = *GET*
+- **UPDATE** = *PUT*
+- **DELETE** = *DELETE*
 
 ---
 # Requests
 - Specify the **method** (GET, POST, etc)
 - URL
 - url-encoded query string parameters ( `?meat=pork` )
+
++++
+# Requests
 - Headers include data about the request
 	- Accept tells the server how you would like the response body represented
 	- Can include auth tokens or authentication information
 - May include "form data", like for creating or updating objects, or providing auth
+
 +++
 # Responses
-Note:
-Remember to talk about caching.
-Content-type
+- Headers include data about the response
+	- Should the client cache this response?
+	- What is the Content-Type of the response?
+	- How is the text encoded?
++++
+# Responses
+- Response body
+	- The requested representation
+	- The results of an update or creation (id? full representation?)
+- Status Code...
+
 +++
 # Status codes
