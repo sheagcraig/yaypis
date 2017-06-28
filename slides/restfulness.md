@@ -154,9 +154,9 @@ These actions map to an HTTP Method:
 +++
 ## Status Codes: Most Common
 ```shell
-200   400   404
-201   401   409
-204   403   500
+*200*   **400**  *404*
+**201**   *401*  **409**
+*204*   **403**  *500*
 ```
 
 +++?image=assets/status_codes.jpg&size=contain
