@@ -174,7 +174,7 @@ i.e. an UPDATE happened, and you already have the data.
 
 +++?image=assets/400.jpg&size=contain
 # 400 **Bad Request** (and you are a bad person)
-+++?image=assets/401.jpg&size=contain
++++?image=assets/401.png&size=contain
 # 401 **Unauthorized**
 +++?image=assets/403.jpg&size=contain
 # 403 **Forbidden**
