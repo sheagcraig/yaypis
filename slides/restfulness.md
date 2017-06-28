@@ -116,30 +116,72 @@ These actions map to an HTTP Method:
 - **DELETE** = *DELETE*
 
 ---
-# Requests
+# Making Requests
 - Specify the **method** (GET, POST, etc)
 - URL
 - url-encoded query string parameters ( `?meat=pork` )
 
 +++
-# Requests
+# Making Requests
 - Headers include data about the request
 	- Accept tells the server how you would like the response body represented
 	- Can include auth tokens or authentication information
 - May include "form data", like for creating or updating objects, or providing auth
 
 +++
-# Responses
+# Receiving Responses
 - Headers include data about the response
 	- Should the client cache this response?
 	- What is the Content-Type of the response?
 	- How is the text encoded?
 +++
-# Responses
+# Receiving Responses
 - Response body
 	- The requested representation
 	- The results of an update or creation (id? full representation?)
 - Status Code...
 
 +++
-# Status codes
+# Status Codes
+- Numeric code indicating result of request
+- First digit specifies class of response
+- **1xx** *Informational*
+- **2xx** *Success*
+- **3xx** *Redirection*
+- **4xx** *Client Error*
+- **5xx** *Server Error*
+
++++
+## Status Codes: Most Common
+```shell
+200   400   404
+201   401   409
+204   403   500
+```
+
++++?image=assets/status_codes.jpg&size=contain
+# The Status Code Nicolas Cage Pneumonic
++++?image=assets/200.jpg&size=contain
+# 200 **OK**
++++?image=assets/201.jpg&size=contain
+# 201 **Created**
++++?image=assets/204.jpg&size=contain
+# 204 **No Content**
+
+Note:
+No Content is really saying "we've accepted your request, but the server doesn't need to return anything; don't update your view"
+i.e. an UPDATE happened, and you already have the data.
+
++++?image=assets/400.jpg&size=contain
+# 400 **Bad Request** (and you are a bad person)
++++?image=assets/401.jpg&size=contain
+# 401 **Unauthorized**
++++?image=assets/403.jpg&size=contain
+# 403 **Forbidden**
+(You shall not pass)
++++?image=assets/404.png&size=contain
+# 404 **Not Found**
++++?image=assets/409.jpg&size=contain
+# 409 **Conflict**
++++?image=assets/500.png&size=contain
+# 500 **Internal Server Error** 
