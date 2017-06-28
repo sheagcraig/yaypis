@@ -1,3 +1,4 @@
 theme: black
 highlight: solarized-dark
 revealjs: 3.4.1
+theme-override : assets/css/PITCHME.css

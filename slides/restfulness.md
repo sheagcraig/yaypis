@@ -1,4 +1,4 @@
-# <span style='color: #3DE9FE'>REST</span>fulness
+# _REST_fulness
 ## What does it mean to be *RESTful*?
 +++
 # <span style='color: #3DE9FE'>RE</span>presentational
@@ -102,11 +102,21 @@ The major functions needed for manipulating data in persistent storage (i.e. a d
 <img src="assets/tshirt.jpg" alt='Nice shirt' style='width: 200px;' />
 
 +++
+These actions map to an HTTP Method:
+- <span style='color: #3DE9FE'>CREATE</span> = POST
+- <span style='color: #3DE9FE'>READ</span> = GET
+- <span style='color: #3DE9FE'>UPDATE</span> = PUT
+- <span style='color: #3DE9FE'>DELETE</span> = DELETE
 
+---
 # Requests
-Note:
-Talk about HTTP methods
-Talk about accept header
+- Specify the <span style='color: #3DE9FE'>method</span> (GET, POST, etc)
+- URL
+- url-encoded query string parameters ( `?meat=pork` )
+- Headers include data about the request
+	- Accept tells the server how you would like the response body represented
+	- Can include auth tokens or authentication information
+- May include "form data", like for creating or updating objects, or providing auth
 +++
 # Responses
 Note:
