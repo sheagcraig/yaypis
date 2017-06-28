@@ -57,12 +57,17 @@ Example: Which is "correct"?
 ---
 ## What does it mean *practically* to be *RESTful*?
 
-- Resources are accessed through HTTP requests to a collection of URLs that uniquely identify service objects.
-	- Collection: http://instagrambookfacetweets.com/api/cat_videos/
-	- Individual: http://instagrambookfacetweets.com/api/cat_videos/45244029342342
-- These resources are *represented*, for our examples at least, as JSON or XML.
+- Resources are mapped to a collection of URLs <!-- .element: class="fragment" -->
+	- Resources are uniquely identified. <!-- .element: class="fragment" -->
+	- Collection: http://instagrambookfacetweets.com/api/cat_videos/ <!-- .element: class="fragment" -->
+	- Individual: http://instagrambookfacetweets.com/api/cat_videos/45244029342342 <!-- .element: class="fragment" -->
+
++++
+## What does it mean *practically* to be *RESTful*?
+- Resources are *represented* as JSON or XML.
 - We specify the action we wish to perform using HTTP methods (GET, POST, PUT, DELETE).
 - The status code of the response represents type of success or failure.
+	- *200* = **YAY**
 
 +++?image=assets/request_flowchart.jpg&size=contain
 +++
