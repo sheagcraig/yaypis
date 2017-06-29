@@ -53,6 +53,8 @@ $ curl \
 	-H "publickey:PUBLICKEY" http://sal.awesome.com/api/machines/C0DEADBEEF01 \
 	| python3 -m json.tool
 ```
+@[5]
+
 +++
 ```
 {
@@ -92,7 +94,7 @@ $ brew install httpie
 ```
 ```shell
 $ http --follow \
-	http://sal.na.sas.com/api/machines/C02SWZ3VGTF1 \
+	http://sal.awesome.com/api/machines/C0DEADBEEF01 \
 	"privatekey:PRIVATEKEY" \
 	"publickey:PUBLICKEY"
 ```
@@ -112,20 +114,25 @@ $ http -a USERNAME \
 	https://api.github.com/repos/jakubroztocil/httpie/issues/83/comments \
 	body='HTTPie is awesome! :heart:'
 ```
+@[2]
+@[4]
+
 +++
 # Python 
 ## urllib from the interpreter
 ```
 >>> import ssl
 >>> import urllib.request
->>> request = urllib.request.Request('http://sal.na.sas.com/api/machines/C02SWZ3VGTF1')
+>>> request = urllib.request.Request('http://sal.awesome.com/api/machines/C0DEADBEEF01')
 >>> request.headers['privatekey'] = "PRIVATEKEY"
 >>> request.headers['publickey'] = "PUBLICKEY"
->>> ctx = ssl.create_default_context()
->>> ctx.check_hostname = False
->>> ctx.verify_mode = ssl.CERT_NONE
+>>> ctx = ssl.create_default_context(cafile='/path/to/sal.awesome.com.pem')
 >>> response = urllib.request.urlopen(request, context=ctx)
 ```
+@[1-2]
+@[3-5]
+@[7]
+
 +++
 # Requests
 +++
