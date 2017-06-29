@@ -144,6 +144,8 @@ $ http -a USERNAME \
 ```shell
 pip3 install requests
 ```
++++
+# Requests
 
 ```
 >>> import requests
