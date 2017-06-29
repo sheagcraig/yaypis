@@ -164,6 +164,8 @@ pip3 install requests
 
 +++
 # Curl -> Requests tool
+## https://curl.trillworks.com
++++?image=assets/curl_to_requests.png&size=contain
 +++
 # Selenium / PhantomJS / Chromedriver for solving niggling problems.
 Note:
