@@ -121,20 +121,44 @@ $ http -a USERNAME \
 # Python 
 ## urllib from the interpreter
 ```
+>>> import json
 >>> import ssl
 >>> import urllib.request
->>> request = urllib.request.Request('http://sal.awesome.com/api/machines/C0DEADBEEF01')
->>> request.headers['privatekey'] = "PRIVATEKEY"
->>> request.headers['publickey'] = "PUBLICKEY"
->>> ctx = ssl.create_default_context(cafile='/path/to/sal.awesome.com.pem')
->>> response = urllib.request.urlopen(request, context=ctx)
+>>> request = urllib.request.Request(
+...		'http://sal.awesome.com/api/machines/C0DEADBEEF01')
+>>> headers = {
+...		'privatekey': 'PRIVATEKEY',
+...		'publickey': 'PUBLICKEY'}
+>>> ctx = ssl.create_default_context(
+...		cafile='/path/to/sal.awesome.com.pem')
+>>> response = urllib.request.urlopen(
+...		request, context=ctx)
+>>> result = json.loads(response.read())
 ```
-@[1-2]
-@[3-5]
-@[7]
+@[1-3]
+@[4-8]
+@[11-13]
 
 +++
 # Requests
+```shell
+pip3 install requests
+```
+```
+>>> import requests
+>>> headers = {
+...		'privatekey': 'PRIVATEKEY',
+...		'publickey': 'PUBLICKEY'}
+>>> response = requests.get(
+...		'http://sal.awesome.com/api/machines/C0DEADBEEF01',
+...		verify='/path/to/sal.awesome.com.pem',
+...		headers=headers)
+>>> result = response.json()
+```
+@[1]
+@[5-8]
+@[9]
+
 +++
 # Curl -> Requests tool
 +++
@@ -144,3 +168,4 @@ Note:
 Todo- what do you do about SSL?
 Todo- auth types
 TODO switch to using requests-oauthlib (oauth2, plugs into requests)
+TODO sessions
