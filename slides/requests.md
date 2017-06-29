@@ -144,6 +144,7 @@ $ http -a USERNAME \
 ```shell
 pip3 install requests
 ```
+
 ```
 >>> import requests
 >>> headers = {
