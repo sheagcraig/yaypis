@@ -146,7 +146,7 @@ requests.exceptions.SSLError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verif
 True
 ```
 @[2-5]
-@[10]
+@[6-10]
 @[11-12]
 
 +++
