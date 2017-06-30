@@ -199,5 +199,5 @@ Read the docs for the API in question; sometimes the token has preceding text, e
 # Authentication with Requests
 ## OAUTH
 
-Note:
-TODO switch to using requests-oauthlib (oauth2, plugs into requests)
++++?code=examples/tweet_intro/tweet_intro.py
+@[2-5]
