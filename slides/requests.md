@@ -150,7 +150,7 @@ True
 @[6-10]
 @[11-13]
 
-+++
+---
 # Authentication with Requests
 http://docs.python-requests.org/en/master/user/authentication/
 
@@ -198,6 +198,14 @@ Read the docs for the API in question; sometimes the token has preceding text, e
 +++
 # Authentication with Requests
 ## OAUTH
+Doing tweets
+https://dev.twitter.com
+
++++?image=assets/twitter_application_mgmt.png&size=contain
 
 +++?code=examples/tweet_intro/tweet_intro.py
-@[2-5]
+@[9]
+@[24-27]
+@[28-29]
+
++++?image=assets/twitter_results.png&size=contain
