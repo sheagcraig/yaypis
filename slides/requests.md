@@ -61,7 +61,8 @@ Requests makes it super easy to do *most* SSL, and makes you work to make it les
 Remember to keep certifi up to date!
 
 +++
-``` >>> import requests
+```
+>>> import requests
 >>> response = requests.get('https://pypi.org')
 >>> response = requests.get('https://self_signed_cert.com')
 Traceback (most recent call last):
