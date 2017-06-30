@@ -142,12 +142,13 @@ requests.exceptions.SSLError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verif
 >>> sesh.get('https://breakdance.com/twistoflex')
 <Response [200]>
 >>> response = sesh.get('https://breakdance.com/headspin')
->>> ('Accept' in sesh.headers and sesh.headers['Accept']' == application/json')
+>>> ('Accept' in response.request.headers and
+...	 response.request.headers['Accept']' == 'application/json')
 True
 ```
 @[2-5]
 @[6-10]
-@[11-12]
+@[11-13]
 
 +++
 # Authentication with Requests
@@ -165,12 +166,12 @@ http://docs.python-requests.org/en/master/user/authentication/
 ## Basic
 ```
 >>> import requests
->>> requests.get(
-...		'https://api.sparklemotion.com/user',
-...		auth=('emilio', '2L3374u!'))
+>>> sesh = requests.Session()
+>>> sesh.auth = ('emilio', '2L3374u!')
+>>> sesh.get('https://api.sparklemotion.com/user')
 <Response [200]>
 ```
-@[4]
+@[3]
 
 Note:
 Basic auth can be just a 2-tuple of username and password passed to the auth parameter.
@@ -178,6 +179,21 @@ Basic auth can be just a 2-tuple of username and password passed to the auth par
 +++
 # Authentication with Requests
 ## Token Authentication
+
+```
+>>> import requests
+>>> sesh = requests.Session()
+>>> headers = {
+...		'privatekey': 'PRIVATEKEY',
+...		'publickey': 'PUBLICKEY'}
+>>> sesh.headers.update(headers)
+>>> sesh.get('http://sal.awesome.com/api/machines/C0DEADBEEF01')
+<Response [200]>
+```
+@[3-6]
+
+Note:
+Read the docs for the API in question; sometimes the token has preceding text, etc.
 
 +++
 # Authentication with Requests

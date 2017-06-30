@@ -5,8 +5,8 @@ import io
 import json
 import os
 
-import oauth2
 import requests
+from requests_oauthlib import OAuth1Session
 from PIL import Image
 
 
@@ -17,28 +17,27 @@ CONSUMER_SECRET = os.getenv('CONSUMER_SECRET')
 
 
 def main():
-    # Make sure to provide access token and consumer key via sourcing the secrets file!
-    taco_response = oauth_req(
-        'https://api.twitter.com/1.1/search/tweets.json?q=tacos&filter=images', ACCESS_TOKEN,
-        ACCESS_TOKEN_SECRET)
-    taco_tweets = json.loads(taco_response)
+    # Use the Twitter Developer site to create an application and get
+    # your tokens.
+    # Make sure to provide access token and consumer key via sourcing the
+    # secrets file!
+    oauth = OAuth1Session(
+        CONSUMER_KEY, client_secret=CONSUMER_SECRET,
+        resource_owner_key=ACCESS_TOKEN,
+        resource_owner_secret=ACCESS_TOKEN_SECRET)
+    taco_response = oauth.get(
+        'https://api.twitter.com/1.1/search/tweets.json?q=tacos&filter=images')
+    taco_tweets = taco_response.json()
     taco_images = get_images(taco_tweets)
     images = [create_image(url) for url in taco_images]
     show_images(images)
     save_images(images, 'tacos')
 
 
-def oauth_req(url, key, secret, http_method="GET", post_body=b'', http_headers=None):
-    consumer = oauth2.Consumer(key=CONSUMER_KEY, secret=CONSUMER_SECRET)
-    token = oauth2.Token(key=key, secret=secret)
-    client = oauth2.Client(consumer, token)
-    resp, content = client.request(url, method=http_method, body=post_body, headers=http_headers)
-    return content
-
-
 def get_images(statuses):
     tweets = statuses['statuses']
-    return {img.get('media_url') for tweet in tweets for img in tweet['entities'].get('media', [])}
+    return {img.get('media_url') for tweet in tweets for
+            img in tweet['entities'].get('media', [])}
 
 
 def create_image(url):
@@ -50,7 +49,8 @@ def create_image(url):
 def save_images(images, name_prefix, basedir=os.getcwd()):
     pad = len(str(len(images)))
     for index, image in enumerate(images):
-        image_path = os.path.join(basedir, '{0}_{1:0{2}d}.png'.format(name_prefix, index, pad))
+        image_path = os.path.join(
+            basedir, '{0}_{1:0{2}d}.png'.format(name_prefix, index, pad))
         image.save(image_path)
 
 
