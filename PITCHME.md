@@ -80,23 +80,13 @@ More experienced audience come up with a cool idea by the end of the talk
 +++
 ![Tacos!](examples/giphy/taco.gif)
 
-Note:
-TODO just demonstrate something cool with a single request; like querying twitters?
-
 ---?include=slides/why.md
-
 ---?include=slides/api.md
-
 ---?include=slides/restfulness.md
-
 ---?include=slides/requests.md
-
 ---?include=slides/responses.md
-
+---?include=slides/scraping.md
 ---?include=slides/example_frameworks.md
-
 ---?include=slides/generic_wrappers.md
-
 ---?include=slides/api_creation.md
-
 ---?include=slides/api_wrapping.md

@@ -42,7 +42,7 @@ $ curl \
 +++
 ## almost...
 ```
-{"id":737,"serial":"C02SWZ3VGTF1","hostname":"mla806","operating_system":"10.12.5","memory":"16 GB","memory_kb":16777216,"munki_version":"3.0.0.3333","manifest":"C02SWZ3VGTF1","hd_space":"412775584","hd_total":"975831040","hd_percent":"58","console_user":"shcrai","machine_model":"MacBookPro13,3","machine_model_friendly":"MacBook Pro (15-inch, 2016)","cpu_type":"Intel Core i7","cpu_speed":"2.7 GHz","os_family":"Darwin","last_checkin":"2017-06-28T16:51:40.952013Z","first_checkin":"2017-01-05T20:08:09.464435Z","errors":0,"warnings":3,"activity":null,"puppet_version":"4.10.4","sal_version":"2.0.4","last_puppet_run":"2017-06-28T16:26:40Z","puppet_errors":0,"deployed":true,"machine_group":184}
+{"id":737,"serial":"C0DEADBEEF01","hostname":"tacomaster","operating_system":"10.12.5","memory":"16 GB","memory_kb":16777216,"munki_version":"3.0.0.3333","manifest":"C02SWZ3VGTF1","hd_space":"412775584","hd_total":"975831040","hd_percent":"58","console_user":"shcrai","machine_model":"MacBookPro13,3","machine_model_friendly":"MacBook Pro (15-inch, 2016)","cpu_type":"Intel Core i7","cpu_speed":"2.7 GHz","os_family":"Darwin","last_checkin":"2017-06-28T16:51:40.952013Z","first_checkin":"2017-01-05T20:08:09.464435Z","errors":0,"warnings":3,"activity":null,"puppet_version":"4.10.4","sal_version":"2.0.4","last_puppet_run":"2017-06-28T16:26:40Z","puppet_errors":0,"deployed":true,"machine_group":184}
 ```
 +++
 ## Pretty print by piping to Python
@@ -166,11 +166,17 @@ pip3 install requests
 # Curl -> Requests tool
 ## https://curl.trillworks.com
 +++?image=assets/curl_to_requests.png&size=contain
-+++
-# Selenium / PhantomJS / Chromedriver for solving niggling problems.
-Note:
 
-Todo- what do you do about SSL?
+Note:
+I just copied and pasted from above example-it knows to just drop the pipe and handle the line continuations.
+
++++
+# SSL
+- Current python3 ships its own OpenSSL 1.0.2
+- Apple's provided python 2.7.10 uses OpenSSL 0.9.8zh 14 Jan 2016 :poop:
+	- High Sierra: python 2.7.10 ships LibreSSL 2.2.7
+
++++
 Todo- auth types
 TODO switch to using requests-oauthlib (oauth2, plugs into requests)
 TODO sessions
