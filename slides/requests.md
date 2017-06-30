@@ -56,7 +56,7 @@ I just copied and pasted from above example-it knows to just drop the pipe and h
 pip3 install -U certifi
 ```
 
-Notes:
+Note:
 Requests makes it super easy to do *most* SSL, and makes you work to make it less-secure.
 Remember to keep certifi up to date!
 
@@ -136,7 +136,7 @@ requests.exceptions.SSLError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verif
 # Authentication with Requests
 ## OAUTH
 
-Notes:
+Note:
 TODO switch to using requests-oauthlib (oauth2, plugs into requests)
 
 +++
