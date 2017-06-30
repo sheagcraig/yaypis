@@ -51,9 +51,15 @@ I just copied and pasted from above example-it knows to just drop the pipe and h
 +++
 # Just do it
 > Requests verifies SSL certificates for HTTPS requests, just like a web browser. By default, SSL verification is enabled, and Requests will throw a SSLError if it's unable to verify the certificate.
+
 ```shell
 pip3 install -U certifi
 ```
+
+Notes:
+Requests makes it super easy to do *most* SSL, and makes you work to make it less-secure.
+Remember to keep certifi up to date!
+
 +++
 ``` >>> import requests
 >>> response = requests.get('https://pypi.org')
@@ -118,8 +124,19 @@ requests.exceptions.SSLError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verif
 @[4]
 
 +++
+# Authentication with Requests
+## Basic
 
++++
+# Authentication with Requests
+## Token-in-a-header
 
-Todo- auth types
++++
+# Authentication with Requests
+## OAUTH
+
+Notes:
 TODO switch to using requests-oauthlib (oauth2, plugs into requests)
-TODO sessions
+
++++
+# Sessions
