@@ -131,9 +131,6 @@ requests.exceptions.SSLError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verif
 +++
 # Sessions
 
-Note:
-Sessions allow you to specify things like SSL verify, cookies, headers, and use TCP connection pooling.
-
 ```
 >>> import requests
 >>> sesh = requests.Session()
