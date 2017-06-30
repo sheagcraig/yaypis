@@ -1,3 +1,8 @@
+# Python Requests
+## HTTP for Humans
+> Warning: Recreational use of the Python standard library for HTTP may result in dangerous side-effects, including: security vulnerabilities, verbose code, reinventing the wheel, constantly reading documentation, depression, headaches, or even death.
+http://docs.python-requests.org/en/master/
+
 +++?image=assets/use_requests.png&size=contain
 
 +++
@@ -49,8 +54,7 @@ I just copied and pasted from above example-it knows to just drop the pipe and h
 pip3 install -U certifi
 ```
 +++
-```
->>> import requests
+``` >>> import requests
 >>> response = requests.get('https://pypi.org')
 >>> response = requests.get('https://self_signed_cert.com')
 Traceback (most recent call last):
