@@ -117,20 +117,70 @@ requests.exceptions.SSLError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verif
 +++
 ```
 >>> import requests
->>> my_self_signed_cert = '/path/to/self_signed_cert.com.pem')
->>> response = requests.get('https://self_signed_cert.com', verify=my_self_signed_cert)
->>> I_am_a_bad_person = requests.get('https://self_signed_cert.com', verify=False)
+>>> my_self_signed_cert = '/path/to/self_signed_cert.com.pem'
+>>> response = requests.get(
+...		'https://self_signed_cert.com',
+...		verify=my_self_signed_cert)
+>>> I_am_a_bad_person = requests.get(
+...		'https://self_signed_cert.com',
+...		verify=False)
 ```
-@[2-3]
-@[4]
+@[2-5]
+@[6-8]
 
++++
+# Sessions
+
+Note:
+Sessions allow you to specify things like SSL verify, cookies, headers, and use TCP connection pooling.
+
+```
+>>> import requests
+>>> sesh = requests.Session()
+>>> sesh.headers.update({'Accept': 'application/json'})
+>>> sesh.verify = '/path/to/cert.pem'
+>>> sesh.auth = ('rasputin', 'correct horse battery staple')
+>>> sesh.get('https://breakdance.com')
+<Response [200]>
+>>> sesh.get('https://breakdance.com/twistoflex')
+<Response [200]>
+>>> response = sesh.get('https://breakdance.com/headspin')
+>>> ('Accept' in sesh.headers and sesh.headers['Accept']' == application/json')
+True
+```
+@[2-5]
+@[10]
+@[11-12]
+
++++
+# Authentication with Requests
+http://docs.python-requests.org/en/master/user/authentication/
+
+```
+>>> import requests
+>>> requests.get(
+...		'https://api.sparklemotion.com/user',
+...		auth=SOME_KIND_OF_AUTH)
+<Response [200]>
+```
 +++
 # Authentication with Requests
 ## Basic
+```
+>>> import requests
+>>> requests.get(
+...		'https://api.sparklemotion.com/user',
+...		auth=('emilio', '2L3374u!'))
+<Response [200]>
+```
+@[4]
+
+Note:
+Basic auth can be just a 2-tuple of username and password passed to the auth parameter.
 
 +++
 # Authentication with Requests
-## Token-in-a-header
+## Token Authentication
 
 +++
 # Authentication with Requests
@@ -138,6 +188,3 @@ requests.exceptions.SSLError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verif
 
 Note:
 TODO switch to using requests-oauthlib (oauth2, plugs into requests)
-
-+++
-# Sessions
