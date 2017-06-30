@@ -1,5 +1,5 @@
-# Python Requests
-## HTTP for Humans
+## Python Requests
+### HTTP for Humans
 > Warning: Recreational use of the Python standard library for HTTP may result in dangerous side-effects, including: security vulnerabilities, verbose code, reinventing the wheel, constantly reading documentation, depression, headaches, or even death.
 http://docs.python-requests.org/en/master/
 
