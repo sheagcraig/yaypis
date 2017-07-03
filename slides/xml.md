@@ -388,6 +388,16 @@ configuration_profiles
         is_removable
 ```
 
++++
+```
+>>> computer.find('general').find('name').text
+'FS-CRAIGS'
+>>> computer[1].find('model').text
+'Apple IIGS'
+>>> len(computer.find('hardware').find('storage'))
+1
+```
+
 +++?code=examples/casperstuff/pretty_element.py
 @[50-58]
 
@@ -401,22 +411,3 @@ configuration_profiles
 1
 ```
 
-+++
-# JSON
-Note:
-pretty printing, tree-printing/exploration
-
----
-# Common data handling tasks
-+++
-# Set arithmetic
-+++
-# Relating data
-+++
-# ML
-+++
-# Visualization
-+++
-# Automation
----
-# HTML
