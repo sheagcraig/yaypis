@@ -22,13 +22,13 @@
 @[1]
 @[2-3]
 
-+++?include=slides/fs-craigs.xml
++++?code=slides/fs-craigs.xml
 
 +++
 ```
 >>> # Elements are lists
 >>> for child in computer:
-...		print child.tag
+...		print(child.tag)
 General
 Hardware
 Location
@@ -37,7 +37,7 @@ Purchasing
 
 +++
 
-```
+```python
 >>> # Elements contain text
 >>> computer[0][0][1].text
 'fs-craigs'
