@@ -189,7 +189,7 @@ def tree(self, element, level=0):
 >>> print(tree(computer))
 ```
 
-+++?include=slides/xml_tree.md
++++?include=xml_tree.md
 
 TODO:
 exploration
