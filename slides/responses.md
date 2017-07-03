@@ -86,6 +86,7 @@ Result is a LIST of COMPUTER objects that you can then operate on.
 >>> misnamed_and_missing = misnamed.intersection(missing)
 >>> misnamed_but_not_missing = misnamed - missing
 >>> # or `misnamed.difference(missing)`
+```
 
 Note:
 These are sets of Computer objects, essentially Elements
@@ -148,6 +149,7 @@ def indent_xml(elem, level=0, more_sibs=False):
 >>> pretty_data = copy.deepcopy(computer)
 >>> indent_xml(pretty_data)
 >>> print(ElementTree.tostring(pretty_data, encoding='UTF-8'))
+```
 
 +++
 ## lxml
