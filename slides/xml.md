@@ -388,7 +388,7 @@ configuration_profiles
         is_removable
 ```
 
-+++?code=/examples/casperstuff/pretty_element.py
++++?code=examples/casperstuff/pretty_element.py
 @[50-58]
 
 +++
