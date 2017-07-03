@@ -201,6 +201,11 @@ Read the docs for the API in question; sometimes the token has preceding text, e
 Doing tweets
 https://dev.twitter.com
 
+Note:
+This is just single-user abbreviated OAUTH for funsies. Creating a web app that
+can create tweets for any user (with their permission) requires more involved
+setup (Spotify example later).
+
 +++?image=assets/twitter_application_mgmt.png&size=contain
 
 +++?code=examples/tweet_intro/tweet_intro.py

@@ -1,0 +1,96 @@
+<computer>
+    <general>
+        <id>461</id>
+        <name>FS-CRAIGS</name>
+        <mac_address>3C:15:C2:DE:6F:26</mac_address>
+        <alt_mac_address>72:00:04:07:A4:C0</alt_mac_address>
+        <ip_address>10.17.8.38</ip_address>
+        <serial_number>C0DEADBEEF01</serial_number>
+        <udid>E79E84CB-3227-5C69-F32G-6C45C2E77DF5</udid>
+        <jamf_version>9.81</jamf_version>
+        <platform>Mac</platform>
+        <barcode_1 />
+        <barcode_2 />
+        <asset_tag />
+        <remote_management>
+            <managed>true</managed>
+            <management_username>casper_admin</management_username>
+        </remote_management>
+        <mdm_capable>true</mdm_capable>
+        <mdm_capable_users>
+            <mdm_capable_user>scraig</mdm_capable_user>
+        </mdm_capable_users>
+        <report_date>2015-10-06 11:57:03</report_date>
+        <report_date_epoch>1444147023495</report_date_epoch>
+        <report_date_utc>2015-10-06T11:57:03.495-0400</report_date_utc>
+        <last_contact_time>2015-10-07 08:48:27</last_contact_time>
+        <last_contact_time_epoch>1444222107871</last_contact_time_epoch>
+        <last_contact_time_utc>2015-10-07T08:48:27.871-0400</last_contact_time_utc>
+        <initial_entry_date>2014-07-01</initial_entry_date>
+        <initial_entry_date_epoch>1404241243921</initial_entry_date_epoch>
+        <initial_entry_date_utc>2014-07-01T15:00:43.921-0400</initial_entry_date_utc>
+        <last_cloud_backup_date_epoch>0</last_cloud_backup_date_epoch>
+        <last_cloud_backup_date_utc />
+        <distribution_point />
+        <sus />
+        <netboot_server>US Services Netboot Server</netboot_server>
+        <site>
+            <id>-1</id>
+            <name>None</name>
+        </site>
+        <itunes_store_account_is_active>true</itunes_store_account_is_active>
+    </general>
+    <hardware>
+        <make>Apple</make>
+        <model>15-inch Retina MacBook Pro (Late 2013)</model>
+        <model_identifier>MacBookPro11,2</model_identifier>
+        <os_name>Mac OS X</os_name>
+        <os_version>10.11.0</os_version>
+        <os_build>15A284</os_build>
+        <active_directory_status>school.da.org</active_directory_status>
+        <service_pack />
+        <processor_type>Intel Core i7</processor_type>
+        <processor_architecture>i386</processor_architecture>
+        <processor_speed>2000</processor_speed>
+        <processor_speed_mhz>2000</processor_speed_mhz>
+        <number_processors>4</number_processors>
+        <total_ram>8192</total_ram>
+        <total_ram_mb>8192</total_ram_mb>
+        <boot_rom>MBP112.0138.B15</boot_rom>
+        <bus_speed>0</bus_speed>
+        <bus_speed_mhz>0</bus_speed_mhz>
+        <battery_capacity>96</battery_capacity>
+        <cache_size>6144</cache_size>
+        <cache_size_kb>6144</cache_size_kb>
+        <available_ram_slots>0</available_ram_slots>
+        <optical_drive />
+        <nic_speed>n/a</nic_speed>
+        <smc_version>2.18f15</smc_version>
+        <storage>
+            <device>
+                <disk>disk0</disk>
+                <model>APPLE SSD SM0256F</model>
+                <revision>UXM2JA1Q</revision>
+                <serial_number>S1K4NYBF519218</serial_number>
+                <size>257024</size>
+                <drive_capacity_mb>257024</drive_capacity_mb>
+                <connection_type>NO</connection_type>
+                <smart_status>Verified</smart_status>
+                <partition>
+                    <name>Macintosh HD (Boot Partition)</name>
+                    <size>238208</size>
+                    <type>boot</type>
+                    <partition_capacity_mb>238208</partition_capacity_mb>
+                    <percentage_full>82</percentage_full>
+                    <filevault_status>Encrypted</filevault_status>
+                    <filevault_percent>100</filevault_percent>
+                    <filevault2_status>Encrypted</filevault2_status>
+                    <filevault2_percent>100</filevault2_percent>
+                    <lvgUUID>3410FE0F-F53F-4FE2-A970-3D2FF3584A4E</lvgUUID>
+                    <lvUUID>2222C7BB-2B74-46F0-B317-3A6A145FA8C5</lvUUID>
+                    <pvUUID>F0F62D12-B315-40E5-88AF-339352762C64</pvUUID>
+                </partition>
+            </device>
+        </storage>
+    </hardware>
+</computer>
