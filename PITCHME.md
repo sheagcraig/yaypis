@@ -63,6 +63,11 @@ Example:
 Note:
 More experienced audience come up with a cool idea by the end of the talk
 
+---?image=assets/lu-xiaojun-2012-olympcs.jpg&size=contain
+
+Note:
+Triage concept in training: Only focus on one thing at a time, whatever is most important.
+
 ---
 # Example
 +++?code=examples/giphy/giphy_basic.py
