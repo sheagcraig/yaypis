@@ -162,9 +162,37 @@ def indent_xml(elem, level=0, more_sibs=False):
 
 +++?code=slides/fs-craigs.xml
 
+Note:
+Why do we care? Because we don't know the structure of all of the data we
+intend to work with. Need to be able to explore.
+
++++
+## Exploring XML Data
+
+```python
+def tree(self, element, level=0):
+	results = []
+	space = ' '
+	indent_size = 4
+	for child in element:
+		entry = space * indent_size * level + child.tag
+		if entry not in results:
+			results.append(entry)
+			if len(child):
+				results.extend(self._get_tags(child, level + 1))
+
+	return results
+```
+
++++
+```python
+>>> print(tree(computer))
+```
+
++++?include=slides/xml_tree.md
+
 TODO:
-tree-printing/exploration
-xml_tree.md
+exploration
 
 +++
 # JSON
