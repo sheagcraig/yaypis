@@ -1,4 +1,3 @@
-+++
 # JSON
 
 ```python
@@ -11,7 +10,7 @@
 <class 'dict'>
 ```
 
-Notes:
+Note:
 JSON 'vanishes' once parsed. It's just nested dictionaries and lists at that point.
 (and ints and strings)
 
@@ -42,5 +41,3 @@ Json not afraid of Unicode
 
 Note:
 json.dumps just takes native python types in! Not a "special" json type.
-
-
