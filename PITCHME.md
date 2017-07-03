@@ -90,7 +90,8 @@ Triage concept in training: Only focus on one thing at a time, whatever is most 
 ---?include=slides/restfulness.md
 ---?include=slides/general_requests.md
 ---?include=slides/requests.md
----?include=slides/responses.md
+---?include=slides/xml.md
+---?include=slides/json.md
 ---?include=slides/scraping.md
 ---?include=slides/example_frameworks.md
 ---?include=slides/generic_wrappers.md

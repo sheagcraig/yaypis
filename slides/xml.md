@@ -126,8 +126,6 @@ def indent_xml(elem, level=0, more_sibs=False):
                 elem.text += pad
         count = 0
         for kid in elem:
-            if kid.tag == "data":
-                kid.text = "*DATA*"
             indent_xml(kid, level + 1, count < num_kids - 1)
             count += 1
         if not elem.tail or not elem.tail.strip():
@@ -388,6 +386,19 @@ configuration_profiles
         name
         uuid
         is_removable
+```
+
++++?code=/examples/casperstuff/pretty_element.py
+@[50-58]
+
++++
+```
+>>> computer.general.name.text
+'FS-CRAIGS'
+>>> computer.hardware.model.text
+'Apple IIGS'
+>>> len(computer.hardware.storage)
+1
 ```
 
 +++
