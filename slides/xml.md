@@ -401,6 +401,9 @@ configuration_profiles
 +++?code=examples/casperstuff/pretty_element.py
 @[50-58]
 
+Note:
+This works by converting all Element objects it takes in into PrettyElements
+
 +++
 ```
 >>> computer.general.name.text
