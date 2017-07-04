@@ -18,13 +18,6 @@
 
 +++?image=assets/nes.png&size=contain
 
++++
 # Selenium
-## Chromedriver vs. PhatomJS
-
-+++
-
-+++
-# Getting curl args from Chrome dev panel
-
-Note:
-TODO Developer panel, Network tab; select resource contextual menu "Copy as curl"
+## safaraidriver, chromedriver, geckodriver and PhantomJS
