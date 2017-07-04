@@ -1,15 +1,30 @@
-# Selenium / PhantomJS / Chromedriver for solving niggling problems.
+# Web-scraping
+
+- lxml.html (works just like etree)
+	- But can handle broken HTML
+		- Of which there is a *lot*
+- BeautifulSoup4
+	- Extremely navigable
+	- Different API from ElementTree / lxml
+	- With html5lib can create valid HTML
+- Scrapy
+	- Async framework for data mining by crawling
+
++++?code=examples/beautiful_soup/nes.py
+@[6-8]
+@[12-13]
+@[14-16]
+@[17-18]
+
++++?image=assets/nes.png&size=contain
+
+# Selenium
+## Chromedriver vs. PhatomJS
 
 +++
-# Web-scraping
 
 +++
 # Getting curl args from Chrome dev panel
 
 Note:
 TODO Developer panel, Network tab; select resource contextual menu "Copy as curl"
-+++
-# BS
-
-+++
-# Scrapy
