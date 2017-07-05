@@ -45,7 +45,7 @@
 +++?image=the_badger2.png&size=contain
 
 +++
-# Google ~Image Search~ Custom Search Engine
+# Google ~~Image Search~~ Custom Search Engine
 ## Triptych
 
 +++
