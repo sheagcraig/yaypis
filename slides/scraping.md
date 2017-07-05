@@ -17,6 +17,7 @@
 @[17-18]
 
 +++?image=assets/nes.png&size=contain
++++?image=assets/bad_dudes.png&size=contain
 
 +++
 # Selenium
