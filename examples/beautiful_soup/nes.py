@@ -16,6 +16,7 @@ def main():
     soup = BeautifulSoup(response.text, 'html5lib')
     game_list = soup.find('ul')
     games = [a.string for a in game_list.find_all('a')]
+    print('Found {} games'.format(len(games)))
 
     # Set up generator
     color = alternating_color()

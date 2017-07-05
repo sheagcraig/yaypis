@@ -1,4 +1,6 @@
-requests
 bs4
-html5lib
 crayons
+fuzzywuzzy[speedup]
+html5lib
+lxml
+requests
