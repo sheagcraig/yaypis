@@ -1,4 +1,14 @@
 # Frameworks for your favorite services
+
+| Service | Python Package |
+| --- | --- |
+| Instagram | https://github.com/facebookarchive/python-instagram, https://github.com/LevPasha/Instagram-API-python |
+| Twitter | https://github.com/bear/python-twitter, https://github.com/tweepy/tweepy |
+| Spotify | https://github.com/plamere/spotipy |
+| Strava | https://github.com/hozn/stravalib |
+| Facebook | https://github.com/mobolic/facebook-sdk |
+| Google Search |  |
+
 +++
 # Spotify
 +++
