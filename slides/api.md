@@ -16,7 +16,7 @@ Appending an item to a list:
 ['Big Trouble in Little China']
 ```
 
-+++?code=list_help.py
++++?code=slides/list_help.py
 @[3-5]
 @[96-97]
 @[106-107]
