@@ -13,9 +13,31 @@
 
 +++
 # Spotify
+## Actually Random
+
 +++
-# Truly Random
-+++
+## Actually Random Overview
+
+1. Use OAuth2 to authenticate user and grant permission to app
+1. Get user's playlists and display
+1. User selects playlist; get all tracks from playlist
+1. Shuffle and display
+1. User saves; Create new playlist, add randomized tracks
+
+
++++?code=examples/actually_random/actually_random.py
+@[53-54]
+@[165]
+@[228-229]
+@[231-234]
+@[236-238]
+@[117-121]
+@[130-132]
+@[133-137]
+
++++?image=assets/playlists.png&size=contain
++++?image=assets/playlist.png&size=contain
+
 # Strava
 +++
 # http://www.marcellobrivio.com/projects/strava-toolbox/
