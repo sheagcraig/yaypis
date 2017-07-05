@@ -18,7 +18,7 @@
 
 +++?image=assets/nes.png&size=contain
 +++?image=assets/bad_dudes.png&size=contain
-+++?code=examples/beautiful_soup/nes.py
++++?code=examples/beautiful_soup/nes2.py
 @[8]
 @[17-19]
 +++?image=assets/nes2.png&size=contain
