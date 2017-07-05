@@ -35,8 +35,8 @@
 @[129-130]
 @[132-137]
 
-+++?image=assets/playlists.png&size=contain
-+++?image=assets/playlist.png&size=contain
++++?image=examples/actually_random/screenshots/playlists.png&size=contain
++++?image=examples/actually_random/screenshots/playlist.png&size=contain
 
 # Strava
 +++
