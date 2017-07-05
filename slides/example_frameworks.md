@@ -38,11 +38,27 @@
 +++?image=examples/actually_random/screenshots/playlists.png&size=contain
 +++?image=examples/actually_random/screenshots/playlist.png&size=contain
 
++++
 # Strava
+## http://www.marcellobrivio.com/projects/strava-toolbox/
++++?image=the_badger1.png&size=contain
++++?image=the_badger2.png&size=contain
+
 +++
-# http://www.marcellobrivio.com/projects/strava-toolbox/
+# Google ~Image Search~ Custom Search Engine
+## Triptych
+
 +++
-# Google Image Search + “Image processing” + Twitter
-+++
-1.  https://developers.google.com/custom-search/json-api/v1/overview
-1.  https://dev.twitter.com/overview/api (There are a bunch of py libs)
+## Triptych Overview
+
+1. Use system dictionary to generate random search
+1. Perform search for images for each random word
+1. Randomly choose one of the results for each.
+1. Generate triptych from final images
+
++++?code=examples/chops/triptych.py
+@[34]
+@[133-135]
+
++++?image=examples/chops/examples/triptych.jpg&size=contain
++++?image=examples/chops/examples/triptych2.jpg&size=contain
