@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block pagename %}
+	<h1>Choose a playlist to randomize. For reals.</h1>
+{% endblock %}
+{% block data %}
+	<div class="row">
+	{% for item in playlists %}
+		<div class="col-sm-6 col-md-4">
+			<div class="thumbnail">
+				{% if item.images %}
+				<img src="{{ item.images[0].url }}" alt="Playlist Art">
+				{% endif %}
+				<div class="caption">
+					<h4>{{ item.name }}</h4>
+					<p><a href="../playlist/{{ item.id }}" class="btn btn-primary" role="button">Shuffle!</a></p>
+				</div>
+			</div>
+		</div>
+	{% endfor %}
+	</div>
+{% endblock %}
