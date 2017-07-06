@@ -40,8 +40,8 @@
 +++
 # Strava
 ## http://www.marcellobrivio.com/projects/strava-toolbox/
-+++?image=the_badger1.png&size=contain
-+++?image=the_badger2.png&size=contain
++++?image=assets/the_badger1.png&size=contain
++++?image=assets/the_badger2.png&size=contain
 
 +++
 # Google ~~Image Search~~ Custom Search Engine
