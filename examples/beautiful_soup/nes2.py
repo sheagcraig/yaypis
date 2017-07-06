@@ -58,8 +58,8 @@ def get_all_nes_games():
     # HTML is not broken, so Use lxml parser,
     # which is a whole lot faster.
     soup = BeautifulSoup(response.text, 'lxml')
-    game_list = soup.find('table')
-    return [a.string for a in game_list.find_all('a')]
+    game_list = soup.find('table').find_all('tr')[1:]
+    return [tr.find('a').string for tr in game_list]
 
 
 def alternating_color():
