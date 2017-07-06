@@ -58,7 +58,7 @@ def get_all_nes_games():
     # HTML is not broken, so Use lxml parser,
     # which is a whole lot faster.
     soup = BeautifulSoup(response.text, 'lxml')
-    game_list = soup.find('table').find_all('tr')[1:]
+    game_list = soup.find('table').find_all('tr')[2:]
     return [tr.find('a').string for tr in game_list]
 
 
