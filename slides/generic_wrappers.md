@@ -11,6 +11,21 @@ Note:
 - Finch is async, but hasn't been updated in awhile.
 
 +++
+```
+sal = slumber.wrap('https://sal.awesome.com/api/')
+sal.machines('C0DEADBEEF01').get()
+```
+Every attribute and method call represents a part of the URL
+
+```
+sal         -> https://sal.awesome.com/api/
+.machines   -> /machines
+(S/N)       -> /C0DEADBEEF01
+.get() 		-> /
+Final URL   -> https://sal.awesome.com/api/machines/C0DEADBEEF01/
+```
+
++++
 ```python
 >>> import slumber
 >>> auth = {'privatekey': 'PRIVATEKEY',
@@ -23,7 +38,7 @@ Note:
 >>> len(machines)
 4723981
 >>> # Get my machine
->>> # GET https://sal.awesome.com/api/machines/
+>>> # GET https://sal.awesome.com/api/machines/C0DEADBEEF01/
 >>> my_machine = api.machines('C0DEADBEEF01').get()
 >>> # Create a business unit
 >>> # POST https://sal.awesome.com/api/business_units/
