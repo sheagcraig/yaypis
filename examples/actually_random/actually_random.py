@@ -113,8 +113,8 @@ def view_playlist(playlist_id):
 
     tracks = results["tracks"]
     track_info = tracks["items"]
-    # Spotify returns results in a pager; get next results if more than
-    # 100 returned.
+    # Spotify returns results in a pager; get next results
+    # if more than 100 returned.
     while tracks["next"]:
         tracks = spotify.next(tracks)
         track_info.extend(tracks["items"])
@@ -126,14 +126,18 @@ def view_playlist(playlist_id):
         return redirect(url_for("view_playlist", playlist_id=playlist_id))
     elif form.validate_on_submit():
         new_playlist_name = form.name.data
-        spotify.user_playlist_create(user_id, new_playlist_name,
-                                     public=results["public"])
+        spotify.user_playlist_create(
+            user_id, new_playlist_name,
+            public=results["public"])
         new_playlist_id = get_playlist_id_by_name(new_playlist_name)
         # You can add up to 100 tracks per request.
-        all_tracks = [track_names[item][1] for item in session["shuffled"] if
-                      track_names[item][1] is not None]
+        all_tracks = [
+            track_names[item][1] for item in
+            session["shuffled"] if track_names[item][1] is
+            not None]
         for tracks in get_tracks_for_add(all_tracks):
-            spotify.user_playlist_add_tracks(user_id, new_playlist_id, tracks)
+            spotify.user_playlist_add_tracks(
+                user_id, new_playlist_id, tracks)
         flash("Playlist '{}' saved.".format(new_playlist_name))
         return redirect(url_for("index"))
 
@@ -232,8 +236,10 @@ def get_user_playlists():
         results = spotify.next(results)
         playlists.extend(results["items"])
 
-    playlist_names = [{"id": playlist["id"], "name": playlist["name"],
-                       "images": playlist["images"]} for playlist in playlists]
+    playlist_names = [
+        {"id": playlist["id"], "name": playlist["name"],
+         "images": playlist["images"]} for playlist in
+        playlists]
     return playlist_names
 
 

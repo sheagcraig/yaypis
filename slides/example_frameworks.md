@@ -30,10 +30,10 @@
 @[164]
 @[227-228]
 @[230-233]
-@[235-237]
+@[239-243]
 @[116-120]
-@[129-130]
-@[132-137]
+@[129-131]
+@[133-140]
 
 +++?image=examples/actually_random/screenshots/playlists.png&size=contain
 +++?image=examples/actually_random/screenshots/playlist.png&size=contain
@@ -57,8 +57,8 @@
 1. Generate triptych from final images
 
 +++?code=examples/chops/triptych.py
-@[34]
-@[133-135]
+@[34-35]
+@[133-136]
 
 +++?image=examples/chops/examples/triptych.jpg&size=contain
 +++?image=examples/chops/examples/triptych2.jpg&size=contain

@@ -31,7 +31,8 @@ import sys
 from PIL import Image, ImageFilter
 import requests
 
-from google_image import GoogleImageSearch, ImageType, ImageSize
+from google_image import (
+    GoogleImageSearch, ImageType, ImageSize)
 
 
 class Words(object):
@@ -130,8 +131,9 @@ def get_images(queries, google_image_search):
             query = words.get_random_word()
             print "Using random search term '%s'." % query
 
-        google_image_search.search(query, imgType=ImageType.photo,
-                                   imgSize=ImageSize.large)
+        google_image_search.search(
+            query, imgType=ImageType.photo,
+            imgSize=ImageSize.large)
         links = google_image_search.links()
         if not links:
             print "No results for search term '%s'." % query
