@@ -27,8 +27,7 @@
 
 +++?code=examples/actually_random/actually_random.py
 @[53-54]
-@[164]
-@[227-228]
+@[168]
 @[230-233]
 @[239-243]
 @[116-120]
