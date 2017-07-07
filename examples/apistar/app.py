@@ -3,9 +3,6 @@ import sqlite3
 from apistar import App, Include, Route
 from apistar.docs import docs_routes
 from apistar.statics import static_routes
-from fuzzywuzzy import process
-
-
 
 
 def games(title='', publisher=''):
@@ -49,8 +46,7 @@ routes = [
     Route('/games/', 'GET', games),
     Route('/game/{game_id}/', 'GET', get_game),
     Include('/docs', docs_routes),
-    Include('/static', static_routes)
-]
+    Include('/static', static_routes)]
 
 
 conn = sqlite3.connect('nes_games.db', check_same_thread=False)
