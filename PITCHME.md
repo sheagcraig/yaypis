@@ -17,7 +17,6 @@
 - Python API frameworks for services<!-- .element: class="fragment" -->
 - Generic API wrappers <!-- .element: class="fragment" -->
 - Create a REST API for existing services <!-- .element: class="fragment" -->
-- Design and implementation of API wrappers <!-- .element: class="fragment" -->
 
 ---
 # Preamble
@@ -96,4 +95,3 @@ Triage concept in training: Only focus on one thing at a time, whatever is most 
 ---?include=slides/example_frameworks.md
 ---?include=slides/generic_wrappers.md
 ---?include=slides/api_creation.md
----?include=slides/api_wrapping.md

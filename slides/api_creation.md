@@ -75,5 +75,5 @@ apistar run
 
 +++
 ## Django Options
-http://tastypieapi.org
-http://www.django-rest-framework.org
+- http://tastypieapi.org
+- http://www.django-rest-framework.org

@@ -208,7 +208,7 @@ setup (Spotify example later).
 
 +++?image=assets/twitter_application_mgmt.png&size=contain
 
-+++?code=examples/tweet_intro/tweet_intro.py
++++?code=examples/taco_tweets/taco_tweets.py
 @[9]
 @[24-27]
 @[28-29]
