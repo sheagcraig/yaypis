@@ -5,20 +5,6 @@
 ### Working with REST APIs in Python
 
 ---
-
-#  What we're covering:
-
-+++
-
-- Preamble: Why it’s important to have fun <!-- .element: class="fragment" -->
-- Restfulness                              <!-- .element: class="fragment" -->
-- Making requests <!-- .element: class="fragment" -->
-- Handling responses<!-- .element: class="fragment" -->
-- Python API frameworks for services<!-- .element: class="fragment" -->
-- Generic API wrappers <!-- .element: class="fragment" -->
-- Create a REST API for existing services <!-- .element: class="fragment" -->
-
----
 # Preamble
 ## Why it’s important to have fun!
 
@@ -86,7 +72,7 @@ Triage concept in training: Only focus on one thing at a time, whatever is most 
 
 ---
 # Setup
-Install python3 from python.org
+Prerequisite: Install python3 from python.org (and then install certifi...)
 
 ```shell
 $ cd /path/to/project
