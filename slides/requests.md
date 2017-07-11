@@ -212,5 +212,20 @@ setup (Spotify example later).
 @[9]
 @[24-27]
 @[28-29]
+@[67-68]
+@[84-86]
+
++++
+```shell
+http://pbs.twimg.com/tweet_video_thumb/DEe_oKXU0AA5NXS.jpg: % chance it's a taco: 0.000007%
+http://pbs.twimg.com/media/DEe_Z1ZV0AA6w5T.jpg: % chance it's a taco: 0.000002%
+http://pbs.twimg.com/media/DEUnVDZUQAAxZfm.jpg: % chance it's a taco: 1.524771%
+http://pbs.twimg.com/media/DEeRzq6UMAADifD.jpg: % chance it's a taco: 0.000000%
+http://pbs.twimg.com/media/DEe_jw2U0AASU9c.jpg: % chance it's a taco: 0.000064%
+http://pbs.twimg.com/media/DEe_D-6UMAAwuew.jpg: % chance it's a taco: 0.000023%
+http://pbs.twimg.com/media/DEZ3bG5VoAAB2ze.jpg: % chance it's a taco: 76.150840%
+http://pbs.twimg.com/media/DEe_nK8XoAAMT5M.jpg: % chance it's a taco: 0.000013%
+http://pbs.twimg.com/media/DEezAgyUAAAA77O.jpg: % chance it's a taco: 0.000001%
+```
 
 +++?image=assets/twitter_results.png&size=contain

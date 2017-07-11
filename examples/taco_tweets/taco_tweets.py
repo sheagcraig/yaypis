@@ -5,6 +5,9 @@ import io
 import json
 import os
 
+
+from clarifai.rest import ClarifaiApp
+from clarifai.rest.client import ApiError
 import requests
 from requests_oauthlib import OAuth1Session
 from PIL import Image
@@ -31,7 +34,9 @@ def main():
     taco_images = get_images(taco_tweets)
     images = [create_image(url) for url in taco_images]
     show_images(images)
-    save_images(images, 'tacos')
+    save_images(images, 'results/tacos')
+    model = get_taco_model()
+    identify_tacos(taco_images, model)
 
 
 def get_images(statuses):
@@ -57,6 +62,30 @@ def save_images(images, name_prefix, basedir=os.getcwd()):
 def show_images(images):
     for image in images:
         image.show()
+
+
+def get_taco_model():
+    app = ClarifaiApp()
+    try:
+        model = app.models.get(model_name='tacos')
+    except ApiError:
+        concepts = ['taco']
+        urls = (
+            'https://www.tacobueno.com/assets/food/tacos/Taco_BFT_Beef_990x725.jpg',
+            'https://www.deltaco.com/files/menu/item/thumb_regulartaco.jpg',
+            'https://deltaco.com/images/promos2017/turkeytaco_01.png')
+        for url in urls:
+            app.inputs.create_image_from_url(url, concepts=concepts)
+        model = app.models.create(model_id="tacos", concepts=concepts)
+        model = model.train()
+    return model
+
+
+def identify_tacos(images, model):
+    for image in images:
+        response = model.predict_by_url(url=image)
+        print("{}: % chance it's a taco: {:%}".format(
+            image, response['outputs'][0]['data']['concepts'][0]['value']))
 
 
 if __name__ == "__main__":

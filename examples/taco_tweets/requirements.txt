@@ -1,3 +1,4 @@
+clarifai
 Pillow
 requests
 requests_oauthlib
