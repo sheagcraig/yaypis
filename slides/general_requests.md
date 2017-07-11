@@ -124,11 +124,12 @@ $ http -a USERNAME \
 >>> import json
 >>> import ssl
 >>> import urllib.request
->>> request = urllib.request.Request(
-...		'http://sal.awesome.com/api/machines/C0DEADBEEF01')
 >>> headers = {
 ...		'privatekey': 'PRIVATEKEY',
 ...		'publickey': 'PUBLICKEY'}
+>>> request = urllib.request.Request(
+...		'http://sal.awesome.com/api/machines/C0DEADBEEF01',
+...		headers=headers)
 >>> ctx = ssl.create_default_context(
 ...		cafile='/path/to/sal.awesome.com.pem')
 >>> response = urllib.request.urlopen(
@@ -136,5 +137,5 @@ $ http -a USERNAME \
 >>> result = json.loads(response.read())
 ```
 @[1-3]
-@[4-8]
-@[11-13]
+@[4-9]
+@[12-14]
