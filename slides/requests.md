@@ -220,15 +220,13 @@ setup (Spotify example later).
 
 ```bash
 $ python3 taco_tweets.py
-DEe_oKXU0AA5NXS.jpg: % chance it's a taco: 0.000007%
-DEe_Z1ZV0AA6w5T.jpg: % chance it's a taco: 0.000002%
-DEUnVDZUQAAxZfm.jpg: % chance it's a taco: 1.524771%
-DEeRzq6UMAADifD.jpg: % chance it's a taco: 0.000000%
-DEe_jw2U0AASU9c.jpg: % chance it's a taco: 0.000064%
-DEe_D-6UMAAwuew.jpg: % chance it's a taco: 0.000023%
-DEZ3bG5VoAAB2ze.jpg: % chance it's a taco: 76.150840%
-DEe_nK8XoAAMT5M.jpg: % chance it's a taco: 0.000013%
 DEezAgyUAAAA77O.jpg: % chance it's a taco: 0.000001%
+DEfDS6aUwAA8gUe.jpg: % chance it's a taco: 0.000003%
+DEe5t_AXUAIO-L3.jpg: % chance it's a taco: 6.349393%
+C15ReRWWgAIdyi4.jpg: % chance it's a taco: 99.929845%
+DEfDZVkUAAAAPxw.jpg: % chance it's a taco: 0.000010%
+DEfDVP6UMAACdS7.jpg: % chance it's a taco: 0.000048%
+DEfDZFaUIAAY326.jpg: % chance it's a taco: 0.000027%
 ```
 
 
