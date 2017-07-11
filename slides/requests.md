@@ -216,7 +216,7 @@ setup (Spotify example later).
 @[84-86]
 
 +++
-```shell
+```
 http://pbs.twimg.com/tweet_video_thumb/DEe_oKXU0AA5NXS.jpg: % chance it's a taco: 0.000007%
 http://pbs.twimg.com/media/DEe_Z1ZV0AA6w5T.jpg: % chance it's a taco: 0.000002%
 http://pbs.twimg.com/media/DEUnVDZUQAAxZfm.jpg: % chance it's a taco: 1.524771%
