@@ -218,6 +218,7 @@ setup (Spotify example later).
 +++
 
 ```bash
+$ python3 taco_tweets.py
 http://pbs.twimg.com/tweet_video_thumb/DEe_oKXU0AA5NXS.jpg: % chance it's a taco: 0.000007%
 http://pbs.twimg.com/media/DEe_Z1ZV0AA6w5T.jpg: % chance it's a taco: 0.000002%
 http://pbs.twimg.com/media/DEUnVDZUQAAxZfm.jpg: % chance it's a taco: 1.524771%
@@ -228,5 +229,6 @@ http://pbs.twimg.com/media/DEZ3bG5VoAAB2ze.jpg: % chance it's a taco: 76.150840%
 http://pbs.twimg.com/media/DEe_nK8XoAAMT5M.jpg: % chance it's a taco: 0.000013%
 http://pbs.twimg.com/media/DEezAgyUAAAA77O.jpg: % chance it's a taco: 0.000001%
 ```
+
 
 +++?image=assets/twitter_results.png&size=contain
