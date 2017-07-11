@@ -10,6 +10,8 @@
 - Scrapy
 	- Async framework for data mining by crawling
 
++++?image=assets/sda_nes_games.png&size=contain
+
 +++?code=examples/beautiful_soup/nes.py
 @[6-8]
 @[12-13]
