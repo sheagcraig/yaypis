@@ -84,6 +84,17 @@ Triage concept in training: Only focus on one thing at a time, whatever is most 
 +++
 ![Tacos!](examples/giphy/taco.gif)
 
+---
+# Setup
+Install python3 from python.org
+
+```shell
+$ cd /path/to/project
+$ python3 -m venv venv_folder
+$ source venv_folder/bin/activate
+$ pip3 install -r requirements.txt
+```
+
 ---?include=slides/why.md
 ---?include=slides/api.md
 ---?include=slides/restfulness.md
