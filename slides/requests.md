@@ -43,7 +43,7 @@ I just copied and pasted from above example-it knows to just drop the pipe and h
 	- Does not use macOS keychain
 	- Install Certificates.command installs curated root certificates from certifi
 		- https://certifi.io
-- Apple's provided python 2.7.10 uses OpenSSL 0.9.8zh 14 Jan 2016 :poop:
+- Apple's provided python 2.7.10 uses OpenSSL 0.9.8zh 14 Jan 2016
 	- Uses the Mac Security framework / keychain for verifying
 	- High Sierra: python 2.7.10 ships LibreSSL 2.2.7
 		- YAY TLS1.2!
