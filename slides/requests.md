@@ -209,9 +209,10 @@ setup (Spotify example later).
 +++?image=assets/twitter_application_mgmt.png&size=contain
 
 +++?code=examples/taco_tweets/taco_tweets.py
+@[12]
 @[9]
-@[24-27]
-@[28-29]
+@[23-30]
+@[31-32]
 @[67-68]
 @[84-86]
 
@@ -219,15 +220,15 @@ setup (Spotify example later).
 
 ```bash
 $ python3 taco_tweets.py
-http://pbs.twimg.com/tweet_video_thumb/DEe_oKXU0AA5NXS.jpg: % chance it's a taco: 0.000007%
-http://pbs.twimg.com/media/DEe_Z1ZV0AA6w5T.jpg: % chance it's a taco: 0.000002%
-http://pbs.twimg.com/media/DEUnVDZUQAAxZfm.jpg: % chance it's a taco: 1.524771%
-http://pbs.twimg.com/media/DEeRzq6UMAADifD.jpg: % chance it's a taco: 0.000000%
-http://pbs.twimg.com/media/DEe_jw2U0AASU9c.jpg: % chance it's a taco: 0.000064%
-http://pbs.twimg.com/media/DEe_D-6UMAAwuew.jpg: % chance it's a taco: 0.000023%
-http://pbs.twimg.com/media/DEZ3bG5VoAAB2ze.jpg: % chance it's a taco: 76.150840%
-http://pbs.twimg.com/media/DEe_nK8XoAAMT5M.jpg: % chance it's a taco: 0.000013%
-http://pbs.twimg.com/media/DEezAgyUAAAA77O.jpg: % chance it's a taco: 0.000001%
+DEe_oKXU0AA5NXS.jpg: % chance it's a taco: 0.000007%
+DEe_Z1ZV0AA6w5T.jpg: % chance it's a taco: 0.000002%
+DEUnVDZUQAAxZfm.jpg: % chance it's a taco: 1.524771%
+DEeRzq6UMAADifD.jpg: % chance it's a taco: 0.000000%
+DEe_jw2U0AASU9c.jpg: % chance it's a taco: 0.000064%
+DEe_D-6UMAAwuew.jpg: % chance it's a taco: 0.000023%
+DEZ3bG5VoAAB2ze.jpg: % chance it's a taco: 76.150840%
+DEe_nK8XoAAMT5M.jpg: % chance it's a taco: 0.000013%
+DEezAgyUAAAA77O.jpg: % chance it's a taco: 0.000001%
 ```
 
 
