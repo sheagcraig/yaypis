@@ -60,7 +60,7 @@ Example: Which is "correct"?
 +++?image=assets/request_flowchart.jpg&size=contain
 
 +++
-## Request are **made** by the *client*
+## Requests are **made** by the *client*
 - *URL* determines resource on which to operate.
 - *HTTP method* determines action to take.
 - *Headers* configure things like auth, requested return type.
