@@ -9,10 +9,10 @@
 REST is about exposing *resources*.
 
 Note:
-- Resources could be anything; files, concepts, (computers in your management tool, status updates on twitter)
-- The REST API abstracts the storage of resources from the interface for getting at them.
 - The data exchanged is representational, meaning it may be in multiple formats that do not
   resemble the native storage (e.g. XML or JSON vs. a SQL table row).
+- Resources could be anything; files, concepts, (computers in your management tool, status updates on twitter)
+- The REST API abstracts the storage of resources from the interface for getting at them.
 +++
 ## Example: http://api.giphy.com/v1/gifs/<em>qRryuPIunLS1O</em>
 (Get a GIF by its ID)
@@ -55,32 +55,34 @@ Example: Which is "correct"?
 - http://myserver.com/catalog?item=1729
 
 ---
-## What does it mean *practically* to be *RESTful*?
-
-- Resources are mapped to a collection of URLs 
-	- Resources are uniquely identified. 
-	- Collection http://instagrambookfacetweets.com/api/cat_videos/ 
-	- Individual http://instagrambookfacetweets.com/api/cat_videos/45244029342342 
-
-+++
-## What does it mean *practically* to be *RESTful*?
-- Resources are *represented* as JSON or XML.
-- We specify the action we wish to perform using HTTP methods (GET, POST, PUT, DELETE).
-- The status code of the response represents type of success or failure.
-	- *200* = **YAY**
+## What does it mean *practically* to consume **REST?**
 
 +++?image=assets/request_flowchart.jpg&size=contain
+
 +++
-## Example
+## What does it mean *practically* to consume **REST?**
+Requests are made, specifying:
+- *URL* determines resource on which to operate.
+- *HTTP method* determines action to take.
+- *Headers* configure things like auth, requested return type.
+- *Form data* passes app data.
 
-- We make a **HTTP GET request** to the computers endpoint to get a list of all computers.
-- We *parse* the resulting XML
-- We **find** a computer we're interested in manipulating, and *change* something (asset tag?)
-- We **PUT** that record back to that computer's unique URL, and the server *responds* wether it worked or not.
-- Etc.
+Responses are returned:
+- *Satus codes* indicate the result
+- *Body* includes the requested data or details about the results
+- *Headers* describe the response
 
----
-What do we need from our API? What do we want to *do*?
+## *URL* determines resource on which to operate
+- Resources are mapped to a collection of URLs 
+	- API base
+		- https://tacos.jk/api/
+	- Collection
+		- /cat_videos
+	- Individual
+		- /cat_videos/452440293
+	- Query strings
+		- /cat_videos?type=adorable
+
 +++
 # CRUD
 -  **C**reate
@@ -115,34 +117,17 @@ These actions map to an HTTP Method:
 - **UPDATE** = *PUT*
 - **DELETE** = *DELETE*
 
----
-# Making Requests
-- Specify the **method** (GET, POST, etc)
-- URL
-- url-encoded query string parameters ( `?meat=pork` )
++++
+## Headers configure the request
+- *Accept* **application/json**
+- Auth info
+
+## Data to be sent is serialized
+- It's all bytes
 
 +++
-# Making Requests
-- Headers include data about the request
-	- Accept tells the server how you would like the response body represented
-	- Can include auth tokens or authentication information
-- May include "form data", like for creating or updating objects, or providing auth
-
-+++
-# Receiving Responses
-- Headers include data about the response
-	- Should the client cache this response?
-	- What is the Content-Type of the response?
-	- How is the text encoded?
-+++
-# Receiving Responses
-- Response body
-	- The requested representation
-	- The results of an update or creation (id? full representation?)
-- Status Code...
-
-+++
-# Status Codes
+# Responses
+## Status Codes
 - Numeric code indicating result of request
 - First digit specifies class of response
 - **1xx** *Informational*
@@ -158,7 +143,7 @@ These actions map to an HTTP Method:
 ## *204*   **403**  *500*
 
 +++?image=assets/status_codes.jpg&size=contain
-# The Status Code Nicolas Cage Pneumonic
+# The Status Code Nicolas Cage Mnemonic
 +++?image=assets/200.jpg&size=contain
 # 200 **OK**
 +++?image=assets/201.jpg&size=contain
@@ -171,15 +156,34 @@ No Content is really saying "we've accepted your request, but the server doesn't
 i.e. an UPDATE happened, and you already have the data.
 
 +++?image=assets/400.jpg&size=contain
-# 400 **Bad Request** (and you are a bad person)
+# 400 **Bad Request** 
 +++?image=assets/401.png&size=contain
 # 401 **Unauthorized**
+
+Note:
+Authentication hasn't happened, you're authenticating wrong.
+
 +++?image=assets/403.jpg&size=contain
 # 403 **Forbidden**
 (You shall not pass)
+
+Note:
+Authentication has happened, but you don't have rights.
 +++?image=assets/404.png&size=contain
 # 404 **Not Found**
 +++?image=assets/409.jpg&size=contain
 # 409 **Conflict**
 +++?image=assets/500.png&size=contain
 # 500 **Internal Server Error** 
+
++++
+
+# Response Body is Serialized
+- Body is in bytes
+- Can be deserialized into XML, JSON
+
+# Response Headers
+- Headers include data about the response
+	- Should the client cache this response?
+	- What is the Content-Type of the response?
+	- How is the text encoded?
