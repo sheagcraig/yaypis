@@ -60,18 +60,19 @@ Example: Which is "correct"?
 +++?image=assets/request_flowchart.jpg&size=contain
 
 +++
-## What does it mean *practically* to consume **REST?**
-Requests are made, specifying:
+## Request are **made** by the *client*
 - *URL* determines resource on which to operate.
 - *HTTP method* determines action to take.
 - *Headers* configure things like auth, requested return type.
 - *Form data* passes app data.
 
-Responses are returned:
++++
+## Responses are **returned** by the *server*
 - *Satus codes* indicate the result
 - *Body* includes the requested data or details about the results
 - *Headers* describe the response
 
++++
 ## *URL* determines resource on which to operate
 - Resources are mapped to a collection of URLs 
 	- API base
