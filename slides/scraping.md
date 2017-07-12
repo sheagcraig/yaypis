@@ -11,6 +11,7 @@
 	- Async framework for data mining by crawling
 
 +++?image=assets/sda_nes_games.png&size=contain
++++?image=assets/bad_dudes.png&size=contain
 
 +++?code=examples/beautiful_soup/nes.py
 @[6-8]
@@ -19,7 +20,6 @@
 @[17-18]
 
 +++?image=assets/nes.png&size=contain
-+++?image=assets/bad_dudes.png&size=contain
 +++?code=examples/beautiful_soup/nes2.py
 @[8]
 @[17-19]
