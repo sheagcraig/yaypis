@@ -21,6 +21,8 @@
 
 +++?image=assets/nes.png&size=contain
 +++?code=examples/beautiful_soup/nes2.py
+@[54-57]
+@[58-62]
 @[8]
 @[17-19]
 +++?image=assets/nes2.png&size=contain
