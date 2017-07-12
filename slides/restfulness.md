@@ -136,7 +136,7 @@ These actions map to an HTTP Method:
 +++
 # Responses
 ## Status Codes
-- Numeric code indicating result of request
+- Numeric code indicates result of request
 - First digit specifies class of response
 - **1xx** *Informational*
 - **2xx** *Success*
@@ -151,7 +151,7 @@ These actions map to an HTTP Method:
 ## *204*   **403**  *500*
 
 +++?image=assets/status_codes.jpg&size=contain
-# The Status Code Nicolas Cage Mnemonic
+# The Nicolas Cage Status Code Mnemonic
 +++?image=assets/200.jpg&size=contain
 # 200 **OK**
 +++?image=assets/201.jpg&size=contain
@@ -186,11 +186,11 @@ Authentication has happened, but you don't have rights.
 
 +++
 
-# Response Body is Serialized
+## Response Body is Serialized
 - Body is in bytes
 - Can be deserialized into XML, JSON
 
-# Response Headers
+## Response Headers
 - Headers include data about the response
 	- Should the client cache this response?
 	- What is the Content-Type of the response?
