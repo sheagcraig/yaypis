@@ -30,11 +30,11 @@
 @[168]
 @[230-233]
 @[239-243]
++++?image=examples/actually_random/screenshots/playlists.png&size=contain
 @[116-120]
 @[129-131]
 @[133-140]
 
-+++?image=examples/actually_random/screenshots/playlists.png&size=contain
 +++?image=examples/actually_random/screenshots/playlist.png&size=contain
 
 +++
