@@ -78,11 +78,11 @@ Example: Which is "correct"?
 	- API base
 		- https://tacos.jk/api/
 	- Collection
-		- /cat_videos
+		- */cat_videos*
 	- Individual
-		- /cat_videos/452440293
+		- */cat_videos/452440293*
 	- Query strings
-		- /cat_videos?type=adorable
+		- */cat_videos?type=adorable*
 
 +++
 # CRUD
