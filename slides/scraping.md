@@ -25,6 +25,7 @@
 @[58-62]
 @[8]
 @[17-19]
+@[28]
 +++?image=assets/nes2.png&size=contain
 
 +++
