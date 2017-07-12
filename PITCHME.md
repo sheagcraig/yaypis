@@ -87,8 +87,8 @@ http://docs.python-guide.org/en/latest/
 ---?include=slides/restfulness.md
 ---?include=slides/general_requests.md
 ---?include=slides/requests.md
----?include=slides/xml.md
 ---?include=slides/json.md
+---?include=slides/xml.md
 ---?include=slides/scraping.md
 ---?include=slides/example_frameworks.md
 ---?include=slides/generic_wrappers.md

@@ -191,7 +191,7 @@ Authentication has happened, but you don't have rights.
 - Can be deserialized into XML, JSON
 
 ## Response Headers
-- Headers include data about the response
-	- Should the client cache this response?
-	- What is the Content-Type of the response?
-	- How is the text encoded?
+- Headers describe the response
+- Should the client cache this response?
+- What is the Content-Type of the response?
+- How is the text encoded?
