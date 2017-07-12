@@ -57,8 +57,7 @@ Triage concept in training: Only focus on one thing at a time, whatever is most 
 # Example
 +++?code=examples/giphy/giphy_basic.py
 @[1]
-@[7-8]
-@[16-17]
+@[7-8] @[16-17]
 @[18]
 +++?code=examples/giphy/results.json
 @[2]
@@ -81,7 +80,9 @@ $ source venv_folder/bin/activate
 $ pip3 install -r requirements.txt
 ```
 
----?include=slides/why.md
+Read this:
+http://docs.python-guide.org/en/latest/
+
 ---?include=slides/api.md
 ---?include=slides/restfulness.md
 ---?include=slides/general_requests.md
