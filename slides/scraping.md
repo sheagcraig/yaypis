@@ -30,4 +30,4 @@
 
 +++
 # Selenium
-## safaridriver, chromedriver, geckodriver and PhantomJS
+## safaridriver, chromedriver, geckodriver, and PhantomJS

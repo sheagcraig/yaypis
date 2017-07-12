@@ -30,6 +30,52 @@ pip3 install requests
 @[9]
 
 +++
+## *Requests* by **Requests** 
+- *HTTP method* is a method:
+	- `requests.get()`
+	- `requests.put()`
+	- `requests.post()`
+	- etc
+- *URL* first parameter to method:
+	- `requests.delete('http://tacos.net/tacos/15')`
+
++++
+## *Requests* by **Requests** 
+- *Headers* are an optional param to method, or property on a session
+
+```python
+headers = {
+	'Accept': 'application/json'}
+requests.get(
+	'http://tacos.net/tacos/15',
+	headers=headers)
+```
+
++++
+## *Requests* by **Requests** 
+- *Form data* passes app data.
+```python
+data = json.dumps(taco)
+requests.post(
+	'http://tacos.net/tacos/0',
+	data=data)
+```
+
++++
+## *Responses* by **Requests**
+- *Status codes* are property on `Response`
+	- `response.status_code`
+- *Headers* are a dict property on Response
+	- `response.headers`
+
++++
+## *Responses* by **Requests**
+- *Body* is available in multiple forms
+	- `response.content` = raw bytes
+	- `response.text` = unicode
+	- `response.json()` = json
+
++++
 # Curl -> Requests tool
 ## https://curl.trillworks.com
 +++?image=assets/curl_to_requests.png&size=contain

@@ -30,20 +30,20 @@ Final URL   -> https://sal.awesome.com/api/machines/C0DEADBEEF01/
 >>> import slumber
 >>> auth = {'privatekey': 'PRIVATEKEY',
 ...		'publickey': 'PUBKEY'}
->>> api = slumber.API('https://sal.awesome.com/api/')
->>> api._store['session'].headers.update(auth)
+>>> sal = slumber.API('https://sal.awesome.com/api/')
+>>> sal._store['session'].headers.update(auth)
 >>> # Get all machines:
 >>> # GET https://sal.awesome.com/api/machines/
->>> machines = api.machines.get()
+>>> machines = sal.machines.get()
 >>> len(machines)
 4723981
 >>> # Get my machine
 >>> # GET https://sal.awesome.com/api/machines/C0DEADBEEF01/
->>> my_machine = api.machines('C0DEADBEEF01').get()
+>>> my_machine = sal.machines('C0DEADBEEF01').get()
 >>> # Create a business unit
 >>> # POST https://sal.awesome.com/api/business_units/
 >>> bu_data = {'name': 'taco consumption unit'}
->>> api.business_units.post(bu_data)
+>>> sal.business_units.post(bu_data)
 {'id': 13, 'name': 'taco consumption unit', 'users': []}
 ```
 @[1]
