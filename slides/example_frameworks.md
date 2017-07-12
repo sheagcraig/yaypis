@@ -5,7 +5,7 @@
 | Service | Python Package |
 | --- | --- |
 | Instagram | https://github.com/LevPasha/Instagram-API-python |
-| Twitter | https://github.com/bear/python-twitter, https://github.com/tweepy/tweepy |
+| Twitter | python-twitter, tweepy, etc|
 | Spotify | https://github.com/plamere/spotipy |
 | Strava | https://github.com/hozn/stravalib |
 | Facebook | https://github.com/mobolic/facebook-sdk |
@@ -24,13 +24,15 @@
 1. Shuffle and display
 1. User saves; Create new playlist, add randomized tracks
 
-
 +++?code=examples/actually_random/actually_random.py
 @[53-54]
 @[168]
 @[230-233]
 @[239-243]
+
 +++?image=examples/actually_random/screenshots/playlists.png&size=contain
+
++++?code=examples/actually_random/actually_random.py
 @[116-120]
 @[129-131]
 @[133-140]
