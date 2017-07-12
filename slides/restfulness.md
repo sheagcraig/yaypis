@@ -76,13 +76,19 @@ Example: Which is "correct"?
 ## *URL* determines resource on which to operate
 - Resources are mapped to a collection of URLs 
 	- API base
-		- https://tacos.jk/api/
-	- Collection
-		- */cat_videos*
-	- Individual
-		- */cat_videos/452440293*
-	- Query strings
-		- */cat_videos?type=adorable*
+		- https://tacos.jk/api
+		- Resources:
+			- */cat_videos*
+			- */dog_videos*
+			- */crawly_thing_videos*
++++
+## Resources may have different endpoints for different purposes
+- Collection
+	- */cat_videos*
+- Individual
+	- */cat_videos/452440293*
+- Query strings
+	- */cat_videos?type=adorable*
 
 +++
 # CRUD
