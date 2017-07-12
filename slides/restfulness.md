@@ -91,7 +91,8 @@ Example: Which is "correct"?
 	- */cat_videos?type=adorable*
 
 +++
-# CRUD
+## What do we want to *DO* with a resource?
+## CRUD
 -  **C**reate
 -  **R**ead
 -  **U**pdate
@@ -101,7 +102,7 @@ Note:
 The major functions needed for manipulating data in persistent storage (i.e. a database/webapp)
 
 +++
-# BREAD
+## BREAD
 -  **B**rowse
 -  **R**ead
 -  **E**dit
@@ -109,7 +110,7 @@ The major functions needed for manipulating data in persistent storage (i.e. a d
 -  **D**elete
 
 +++
-# CRAP
+## CRAP
 -  **C**reate
 -  **R**etrieve
 -  **A**lter
